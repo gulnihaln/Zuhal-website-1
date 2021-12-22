@@ -5,9 +5,18 @@ export default function Navigation() {
       <div class="navbar">
         <a href="home">Home</a>
         <a href="/AboutMe">About Me</a>
-        <a href="/Services">
-          Services <GoChevronDown />
-        </a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+
+          <div class="dropdown-content">
+            <a href="/link1">Link 1</a>
+            <a href="/link2">Link 2</a>
+            <a href="/link3">Link 3</a>
+          </div>
+        </div>
         <a href="/Contact">Contact</a>
         <a href="/POrtfolio">Portfolio</a>
         {/* <div class="dropdown">
@@ -25,18 +34,6 @@ export default function Navigation() {
 
         {/* <div class="dropdown-content"></div>
         </div> */}
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-
-        <div class="dropdown-content">
-          <a href="/link1">Link 1</a>
-          <a href="/link2">Link 2</a>
-          <a href="/link3">Link 3</a>
-        </div>
       </div>
     </>
   );
