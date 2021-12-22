@@ -1,3 +1,3 @@
 export default function AboutMe() {
-  return;
+  return <h1>ABOUT ME</h1>;
 }
