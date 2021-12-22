@@ -81,3 +81,11 @@
 .dropdown {
   overflow: hidden;
 }
+
+.section1-Brows{
+  display: flex;
+
+}
+.section2-Brows{
+   display: flex;
+}
