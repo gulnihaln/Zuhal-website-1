@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Slider from "./Slider";
 import FaqSection from "./FaqSection";
 import {
   covid,
@@ -8,10 +9,15 @@ import {
   contact,
 } from "../faqData";
 export default function FaqPage() {
+  const images = [
+    { src: "https://via.placeholder.com/1440x400.png" },
+    { src: "https://via.placeholder.com/1410x400.png" },
+    { src: "https://via.placeholder.com/1400x400.png" },
+  ];
   const [questionsData, setQuestionsData] = useState(covid);
   return (
     <>
-      <section>Carusel Will be HERE!!!</section>
+      <Slider images={images} />
       <section>
         <article>
           <h4 onClick={() => setQuestionsData(covid)}>
