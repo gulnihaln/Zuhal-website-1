@@ -4,18 +4,11 @@ export default function Footer() {
       <section>
         <ul>
           <li>
-            <a href="http://localhost:3000/">
-              Daily Hair and Make Up
-            </a>
+            <a href="http://localhost:3000/">Home</a>
           </li>
           <li>
             <a href="http://localhost:3000/">
-              Evening Hair and Make Up
-            </a>
-          </li>
-          <li>
-            <a href="http://localhost:3000/">
-              Brow Threading and Tinting
+              Loyal & Gift Card
             </a>
           </li>
         </ul>
@@ -27,15 +20,10 @@ export default function Footer() {
         </a>
         <ul>
           <li>
-            <a href="http://localhost:3000/">
-              Wedding Make Up
-            </a>
-          </li>
-          <li>
-            <a href="http://localhost:3000/">Portfolio</a>
-          </li>
-          <li>
             <a href="http://localhost:3000/">Contact Us</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/">FAQ</a>
           </li>
         </ul>
       </section>
