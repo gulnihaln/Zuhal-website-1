@@ -2,9 +2,15 @@
 import Slider from "./Slider";
 
 export default function Main() {
+  const images = [
+    { src: "https://via.placeholder.com/1440x400.png" },
+    { src: "https://via.placeholder.com/1400x400.png" },
+    { src: "https://via.placeholder.com/1410x400.png" },
+  ];
+
   return (
     <>
-      <Slider />
+      <Slider images={images} />
       <section className="section-intro">
         <h2>Lorem ipsum dolor sit amet.</h2>
         <p>
