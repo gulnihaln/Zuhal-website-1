@@ -7,32 +7,32 @@ export default function Contact() {
         placeItems: "center",
       }}
     >
-      <div class="form-row align-items-center">
-        <label for="name">Your Name</label>
+      <div className="form-row align-items-center">
+        <label htmlFor="name">Your Name</label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="name"
           placeholder="Your Name"
         />
-        <label for="phoneNumber">Contact Number</label>
+        <label htmlFor="phoneNumber">Contact Number</label>
         <input
           type="number"
-          class="form-control"
+          className="form-control"
           id="phoneNumber"
           placeholder="name@example.com"
         />
-        <label for="email">Email address</label>
+        <label htmlFor="email">Email address</label>
         <input
           type="email"
-          class="form-control"
+          className="form-control"
           id="email"
           placeholder="name@example.com"
         />
       </div>
-      <div class="form-row align-items-center">
-        <label for="text-area">Topic of enquiry</label>
-        <select class="form-control" id="text-area">
+      <div className="form-row align-items-center">
+        <label htmlFor="text-area">Topic of enquiry</label>
+        <select className="form-control" id="text-area">
           <option>Please Select</option>
           <option>Bridal Hair & Makeup</option>
           <option>Evening Hair & Makeup</option>
@@ -41,15 +41,19 @@ export default function Contact() {
         </select>
       </div>
 
-      <div class="form-row align-items-center">
-        <label for="Enquiry">
+      <div className="form-row align-items-center">
+        <label htmlFor="Enquiry">
           Please type your enquiry in the area provided
         </label>
-        <textarea class="form-control" id="Enquiry" rows="3"></textarea>
+        <textarea
+          className="form-control"
+          id="Enquiry"
+          rows="3"
+        ></textarea>
       </div>
 
-      <div class="col-auto my-1">
-        <button type="submit" class="btn btn-primary">
+      <div className="col-auto my-1">
+        <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </div>
