@@ -9,8 +9,7 @@
 /coverage
 ./vscode/settings.json
 ./node_modules/
-package-lock.json
-package.json
+
 
 # production
 /build

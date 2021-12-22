@@ -1,4 +1,5 @@
-import { GoChevronDown } from "react-icons/go";
+// import { GoChevronDown } from "react-icons/go";
+// import { Link } from "react-router-dom";
 export default function Navigation() {
   return (
     <>
@@ -12,13 +13,13 @@ export default function Navigation() {
           </button>
 
           <div class="dropdown-content">
-            <a href="/link1">Link 1</a>
-            <a href="/link2">Link 2</a>
-            <a href="/link3">Link 3</a>
+            <a href="/a1">a 1</a>
+            <a href="/a2">a 2</a>
+            <a href="/a3">a 3</a>
           </div>
         </div>
         <a href="/Contact">Contact</a>
-        <a href="/POrtfolio">Portfolio</a>
+        <a href="/Portfolio">Portfolio</a>
         {/* <div class="dropdown">
           <select name="cars" id="cars">
             <optgroup label="Services">
