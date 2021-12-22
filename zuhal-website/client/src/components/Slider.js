@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import SlideRadioBtn from './SlideRadioBtn';
 
-export default function Slider (){
-  const images = [
-      { src: "https://via.placeholder.com/1440x400.png" },
-      { src: "https://via.placeholder.com/1400x400.png" }
-    ];
-
+export default function Slider ( {images} ){
+  
   const [slideIndex, setSlideIndex] = useState(1)
 
   useEffect(() => {
@@ -28,7 +24,7 @@ export default function Slider (){
       <div className="container-slider">
         <img src={images[slideIndex].src}></img>   
       </div>
-      <SlideRadioBtn setSlideIndex={setSlideIndex}/>
+      <SlideRadioBtn setSlideIndex={setSlideIndex} slideIndex={slideIndex} images={images}/>
     </>
   )
 }
