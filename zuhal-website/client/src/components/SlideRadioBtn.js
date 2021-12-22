@@ -14,7 +14,7 @@ export default function SlideRadioBtn({ setSlideIndex, images }) {
               type="radio"
               name="react-radio-btn"
               value={index}
-              onClick={() => handleRadioClick("0")}
+              onClick={() => handleRadioClick(index)}
             ></input>
 
         )}
