@@ -1,29 +1,30 @@
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer>
       <section>
         <ul>
           <li>
-            <a href="http://localhost:3000/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="http://localhost:3000/">
+            <Link to="/loyaltyandgiftcard">
               Loyal & Gift Card
-            </a>
+            </Link>
           </li>
         </ul>
-        <a href="http://localhost:3000/">
+        <Link to="/">
           <img
             src="https://via.placeholder.com/100x75.png"
             alt=""
           />
-        </a>
+        </Link>
         <ul>
           <li>
-            <a href="http://localhost:3000/">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
           </li>
           <li>
-            <a href="http://localhost:3000/">FAQ</a>
+            <Link to="/faq">FAQ</Link>
           </li>
         </ul>
       </section>
