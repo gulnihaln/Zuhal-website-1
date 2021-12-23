@@ -1,7 +1,16 @@
+import Slider from "./Slider";
+
 export default function Wedding() {
+  const images = [
+    { src: "https://via.placeholder.com/1440x410.png" },
+    { src: "https://via.placeholder.com/1400x420.png" },
+    { src: "https://via.placeholder.com/1410x430.png" },
+  ];
   return (
     <>
-      <section>Carousel</section>
+      <section>
+        <Slider images={images}/> 
+      </section>
       
       <section>
         <p>
