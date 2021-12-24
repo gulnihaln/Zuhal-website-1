@@ -1,8 +1,7 @@
-export default function GalleryCard({ images, cardIndex }) {
-  console.log(images);
+export default function GalleryCard({ images }) {
   return (
     <div>
-      {images[cardIndex].map((image) => (
+      {images.map((image) => (
         <img src={image.src} alt={image.alt} />
       ))}
     </div>
