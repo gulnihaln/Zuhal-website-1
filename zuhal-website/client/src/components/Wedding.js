@@ -1,8 +1,19 @@
+import Slider from "./Slider";
+import { bridal } from "../faqData";
+import FaqSection from "./FaqSection";
+
 export default function Wedding() {
+  const images = [
+    { src: "https://via.placeholder.com/1440x410.png" },
+    { src: "https://via.placeholder.com/1400x420.png" },
+    { src: "https://via.placeholder.com/1410x430.png" },
+  ];
   return (
     <>
-      <section>Carousel</section>
-      
+      <section>
+        <Slider images={images} />
+      </section>
+
       <section>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
@@ -26,12 +37,7 @@ export default function Wedding() {
           ipsam aspernatur minus eveniet, distinctio culpa pariatur quae
           doloremque sapiente.
         </p>
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur</li>
-          <li>Lorem ipsum dolor sit amet consectetur</li>
-          <li>Lorem ipsum dolor sit amet consectetur</li>
-          <li>Lorem ipsum dolor sit amet consectetur</li>
-        </ul>
+        {bridal.map(question => <FaqSection question={question} /> )}
       </section>
     </>
   );
