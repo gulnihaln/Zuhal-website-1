@@ -1,25 +1,21 @@
 export const covid = [
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
@@ -32,20 +28,17 @@ export const bridal = [
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
@@ -58,20 +51,17 @@ export const dailyMakeUp = [
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
@@ -84,20 +74,17 @@ export const eveningMakeUp = [
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
@@ -111,8 +98,7 @@ export const contact = [
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
   {
-    question:
-      "Do I have to wear face coverings during the COVID-19 pandemic?",
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
     answer:
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },

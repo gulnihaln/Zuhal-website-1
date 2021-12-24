@@ -82,10 +82,12 @@
   overflow: hidden;
 }
 
-.section1-Brows{
+.section1-Brows {
   display: flex;
-
 }
-.section2-Brows{
-   display: flex;
+.section2-Brows {
+  display: flex;
+}
+img {
+  margin: 10px;
 }

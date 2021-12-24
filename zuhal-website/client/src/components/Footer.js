@@ -8,16 +8,11 @@ export default function Footer() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/loyaltyandgiftcard">
-              Loyal & Gift Card
-            </Link>
+            <Link to="/loyaltyandgiftcard">Loyal & Gift Card</Link>
           </li>
         </ul>
         <Link to="/">
-          <img
-            src="https://via.placeholder.com/100x75.png"
-            alt=""
-          />
+          <img src="https://via.placeholder.com/100x75.png" alt="" />
         </Link>
         <ul>
           <li>

@@ -13,18 +13,10 @@ export default function Navigation() {
 
           <div className="dropdown-content">
             <Link to="/bridal">Bridal Hair & Makeup</Link>
-            <Link to="/dailyhairandmakeup">
-              Day Hair & Makeup
-            </Link>
-            <Link to="/eveninghairandmakeup">
-              Evening Hair & Makeup
-            </Link>
-            <Link to="/browthreadingandtinting">
-              Brow Threading & Tinting
-            </Link>
-            <Link to="/loyaltyandgiftcard">
-              Loyalty & Gift Cards
-            </Link>
+            <Link to="/dailyhairandmakeup">Day Hair & Makeup</Link>
+            <Link to="/eveninghairandmakeup">Evening Hair & Makeup</Link>
+            <Link to="/browthreadingandtinting">Brow Threading & Tinting</Link>
+            <Link to="/loyaltyandgiftcard">Loyalty & Gift Cards</Link>
             <Link to="/lessons">Makeup Lessons</Link>
           </div>
         </div>

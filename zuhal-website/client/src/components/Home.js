@@ -1,8 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./Contact";
 import Header from "./Header";
 import Wedding from "./Wedding";
@@ -26,10 +22,7 @@ export default function Home() {
           <Route path="/" element={<Main />} />
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/bridal" element={<Wedding />} />
-          <Route
-            path="/dailyhairandmakeup"
-            element={<DailyHairAndMakeup />}
-          />
+          <Route path="/dailyhairandmakeup" element={<DailyHairAndMakeup />} />
           <Route
             path="/eveninghairandmakeup"
             element={<EveningHairAndMakeup />}
@@ -39,16 +32,10 @@ export default function Home() {
             element={<BrowThreadingAndTinting />}
           />
 
-          <Route
-            path="/loyaltyandgiftcard"
-            element={<LoyaltyAndGiftCard />}
-          />
+          <Route path="/loyaltyandgiftcard" element={<LoyaltyAndGiftCard />} />
           <Route path="/lessons" element={<Lessons />} />
           <Route path="/contact" element={<Contact />} />
-          <Route
-            path="/portfolio"
-            element={<Portfolio />}
-          />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/faq" element={<FaqPage />} />
         </Routes>
       </main>
