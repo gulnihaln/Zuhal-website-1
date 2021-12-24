@@ -3,7 +3,7 @@ import GalleryCard from "./GalleryCard";
 import { bridal, commercial, beauty, occations } from "./imagesData";
 
 export default function Portfolio() {
-  const [activeGalleryImages, setActiveGalleryImages] = useState(bridal);
+  const [activeGalleryImages, setActiveGalleryImages] = useState([]);
 
   return (
     <>
