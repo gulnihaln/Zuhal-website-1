@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
+
+
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [contactNum, setContactNum] = useState("");
+  const [email, setEmail] = useState("");
+  const [topic, setTopic] = useState("");
+  const [enquiry, setEnquiry] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  function useFormState(initial) {
-    const [state, setState] = useState(initial);
-
-    function setEvent(e) {
-      setState(e.target.value);
-    }
-    return [state, setEvent];
-  }
-  const [name, setName] = useFormState("");
-  const [contactNum, setContactNum] = useFormState("");
-  const [email, setEmail] = useFormState("");
-  const [topic, setTopic] = useFormState("");
-  const [enquery, setEnquery] = useFormState("");
-  const [successMsg, setSuccessMsg] = useState("");
+ function clearInput() {
+   setName("");
+   setContactNum("");
+   setEmail("");
+   setTopic("");
+   setEnquiry("");
+ }
   async function handleSubmit(e) {
     e.preventDefault();
     const mailerState = {
@@ -24,7 +25,7 @@ export default function Contact() {
       contactNum,
       email,
       topic,
-      enquery,
+      enquiry,
     };
 
     const postObject = {
@@ -35,7 +36,9 @@ export default function Contact() {
       },
       body: JSON.stringify(mailerState),
     };
+    
     setSuccessMsg("Your Message was Received");
+    clearInput();
 
     const response = await fetch("http://localhost:5000/send", postObject);
     console.log(`response`, response);
@@ -62,7 +65,8 @@ export default function Contact() {
           id="name"
           placeholder="Your Name"
           required
-          onChange={setName}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           minLength="2"
         />
         <label htmlFor="phoneNumber">Contact Number</label>
@@ -72,7 +76,8 @@ export default function Contact() {
           id="phoneNumber"
           placeholder="123 456 7890"
           required
-          onChange={setContactNum}
+          value={contactNum}
+          onChange={(e) => setContactNum(e.target.value)}
           minLength="11"
         />
         <label htmlFor="email">Email address</label>
@@ -82,13 +87,19 @@ export default function Contact() {
           id="email"
           placeholder="name@example.com"
           required
-          onChange={setEmail}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="form-row align-items-center">
         <label htmlFor="text-area">Topic of enquiry</label>
-        <select className="form-control" id="text-area" onChange={setTopic}>
-          <option>Please Select</option>
+        <select
+          className="form-control"
+          id="text-area"
+          value={topic}
+          onChange={(e) => setTopic(e.target.value)}
+        >
+          <option value="">Please Select</option>
           <option value="Bridal">Bridal Hair & Makeup</option>
           <option value="Evening Makeup">Evening Hair & Makeup</option>
           <option value="Day Makeup">Day Hair & Makeup</option>
@@ -106,7 +117,8 @@ export default function Contact() {
           id="Enquiry"
           rows="3"
           required
-          onChange={setEnquery}
+          value ={enquiry}
+          onChange={(e) => setEnquiry(e.target.value)}
           placeholder="Please type your enquiry"
         ></textarea>
       </div>
