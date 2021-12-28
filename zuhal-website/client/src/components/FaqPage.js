@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "./Slider";
 import FaqSection from "./FaqSection";
 import {
@@ -9,6 +9,9 @@ import {
   contact,
 } from "../faqData";
 export default function FaqPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const images = [
     { src: "https://via.placeholder.com/1440x400.png" },
     { src: "https://via.placeholder.com/1410x400.png" },
