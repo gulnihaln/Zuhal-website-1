@@ -1,7 +1,11 @@
 
 import Slider from "./Slider";
+import { useEffect } from "react";
 
 export default function Main() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const images = [
     { src: "https://via.placeholder.com/1440x400.png" },
     { src: "https://via.placeholder.com/1400x400.png" },
