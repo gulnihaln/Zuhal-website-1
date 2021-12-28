@@ -60,15 +60,17 @@ export default function Contact() {
           placeholder="Your Name"
           required
           onChange={setName}
+          minLength="2"
         />
         <label htmlFor="phoneNumber">Contact Number</label>
         <input
           type="tel"
           className="form-control"
           id="phoneNumber"
-          placeholder="name@example.com"
+          placeholder="123 456 7890"
           required
           onChange={setContactNum}
+          minLength="11"
         />
         <label htmlFor="email">Email address</label>
         <input
@@ -86,8 +88,9 @@ export default function Contact() {
           <option>Please Select</option>
           <option value="Bridal">Bridal Hair & Makeup</option>
           <option value="Evening Makeup">Evening Hair & Makeup</option>
-          <option value="Day Makeup">Day Hair and Makeup</option>
-          <option value="Covid-19">Covid19</option>
+          <option value="Day Makeup">Day Hair & Makeup</option>
+          <option value="Covid-19">Covid-19</option>
+          <option value="Other">Other</option>
         </select>
       </div>
 
@@ -101,6 +104,7 @@ export default function Contact() {
           rows="3"
           required
           onChange={setEnquery}
+          placeholder="Please type your enquiry"
         ></textarea>
       </div>
 
