@@ -46,7 +46,7 @@ export default function Contact() {
   return (
     <form
       style={{
-        width: "400px",
+        width:"400px",
         margin: "auto",
         placeItems: "center",
       }}
