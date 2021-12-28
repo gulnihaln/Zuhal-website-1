@@ -2,6 +2,7 @@ import React, { useState } from "react";
 export default function Contact() {
   function useFormState(initial) {
     const [state, setState] = useState(initial);
+
     function setEvent(e) {
       setState(e.target.value);
     }
@@ -12,7 +13,7 @@ export default function Contact() {
   const [email, setEmail] = useFormState("");
   const [topic, setTopic] = useFormState("");
   const [enquery, setEnquery] = useFormState("");
-
+  const [successMsg, setSuccessMsg] = useState("");
   async function handleSubmit(e) {
     e.preventDefault();
     const mailerState = {
@@ -22,6 +23,7 @@ export default function Contact() {
       topic,
       enquery,
     };
+
     const postObject = {
       method: "POST",
       headers: {
@@ -30,10 +32,9 @@ export default function Contact() {
       },
       body: JSON.stringify(mailerState),
     };
-    const response = await fetch(
-      "http://localhost:5000/send",
-      postObject
-    );
+    setSuccessMsg("Your Message was Received");
+
+    const response = await fetch("http://localhost:5000/send", postObject);
     console.log(`response`, response);
   }
   return (
@@ -46,6 +47,11 @@ export default function Contact() {
       onSubmit={handleSubmit}
     >
       <div className="form-row align-items-center">
+        {successMsg && (
+          <div>
+            <h1>{successMsg}</h1>
+          </div>
+        )}
         <label htmlFor="name">Your Name</label>
         <input
           type="text"
@@ -76,21 +82,11 @@ export default function Contact() {
       </div>
       <div className="form-row align-items-center">
         <label htmlFor="text-area">Topic of enquiry</label>
-        <select
-          className="form-control"
-          id="text-area"
-          onChange={setTopic}
-        >
+        <select className="form-control" id="text-area" onChange={setTopic}>
           <option>Please Select</option>
-          <option value="Bridal">
-            Bridal Hair & Makeup
-          </option>
-          <option value="Evening Makeup">
-            Evening Hair & Makeup
-          </option>
-          <option value="Day Makeup">
-            Day Hair and Makeup
-          </option>
+          <option value="Bridal">Bridal Hair & Makeup</option>
+          <option value="Evening Makeup">Evening Hair & Makeup</option>
+          <option value="Day Makeup">Day Hair and Makeup</option>
           <option value="Covid-19">Covid19</option>
         </select>
       </div>
