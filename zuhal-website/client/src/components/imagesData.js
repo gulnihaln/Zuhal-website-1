@@ -27,14 +27,14 @@ export const beauty = [
     alt: "xxxx",
   },
 ];
-export const occations = [
+export const occasions = [
   {
-    titl: "Occations",
+    titl: "Occasions",
     src: "https://via.placeholder.com/600x355.png",
     alt: "xxxx",
   },
   {
-    titl: "Occations",
+    titl: "Occasions",
     src: "https://via.placeholder.com/600x356.png",
     alt: "xxxx",
   },

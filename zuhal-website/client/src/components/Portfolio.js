@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import GalleryCard from "./GalleryCard";
-import { bridal, commercial, beauty, occations } from "./imagesData";
+import { bridal, commercial, beauty, occasions } from "./imagesData";
 
 export default function Portfolio() {
   const [activeGalleryImages, setActiveGalleryImages] = useState([]);
+  const [galleryStyle, setGalleryStyle] = useState("")
 
   return (
     <>
@@ -12,33 +13,37 @@ export default function Portfolio() {
         <img src="https://via.placeholder.com/640x332.png" alt="" />
         <button
           style={{ border: "none" }}
-          onClick={() => setActiveGalleryImages(bridal)}
+          onClick={() => {setActiveGalleryImages(bridal)
+          setGalleryStyle("bridal")}}
         >
           Bridal Gallery
         </button>
         <img src="https://via.placeholder.com/640x332.png" alt="" />
         <button
           style={{ border: "none" }}
-          onClick={() => setActiveGalleryImages(beauty)}
+          onClick={() => {setActiveGalleryImages(beauty)
+          setGalleryStyle("beauty")}}
         >
           Beauty/Editorial Gallery
         </button>
         <img src="https://via.placeholder.com/640x332.png" alt="" />
         <button
           style={{ border: "none" }}
-          onClick={() => setActiveGalleryImages(occations)}
+          onClick={() => {setActiveGalleryImages(occasions)
+          setGalleryStyle("occasions")}}
         >
           Occasions Gallery
         </button>
         <img src="https://via.placeholder.com/640x332.png" alt="" />
         <button
           style={{ border: "none" }}
-          onClick={() => setActiveGalleryImages(commercial)}
+          onClick={() => {setActiveGalleryImages(commercial)
+          setGalleryStyle("commercial")}}
         >
           Commercial Gallery
         </button>
       </section>
-      <section className="gallery-section">
+      <section className={`${galleryStyle}-gallery gallery-main`}>
         <GalleryCard images={activeGalleryImages} />
       </section>
     </>
