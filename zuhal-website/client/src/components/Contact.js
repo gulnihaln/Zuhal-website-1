@@ -36,11 +36,22 @@ export default function Contact() {
       body: JSON.stringify(mailerState),
     };
 
-    setSuccessMsg("Your Message was Received");
-    clearInput();
-
-    const response = await fetch("http://localhost:5000/send", postObject);
-    console.log(`response`, response);
+    try {
+      const response = await fetch("http://localhost:5000/send", postObject);
+      const message = await response.json();
+      if (response.status === 200) {
+        setSuccessMsg(message.msg);
+        clearInput();
+      } else if (response.status === 400) {
+        setSuccessMsg(message.msg);
+      } else {
+        setSuccessMsg(message.msg);
+      }
+    } catch (error) {
+      setSuccessMsg(
+        `Ooops!! Sorry, something went wrong. Check your Internet connection and try again later or you can contact me at zuhalinfo@zuhalmakeup.com`
+      );
+    }
   }
   return (
     <>
