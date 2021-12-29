@@ -45,6 +45,31 @@ export default function Contact() {
   return (
     <>
       <section>
+        <article>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4126.081761021525!2d7.715206033843513!3d48.06823365077311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479116d811b8255b%3A0x497aa1ecd4c99ddf!2sLa%20Speranza!5e0!3m2!1sen!2suk!4v1640799792587!5m2!1sen!2suk"
+            width="600"
+            title="Zulhul Makeup Salon"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+
+          <p>
+            Hi There, <br />I am looking forward to hearing from you. Please
+            feel free to get in touch via the form below, I will get back to you
+            as soon as possible.
+          </p>
+          <p>Zuhal Makeup Artist</p>
+          <p>
+            Bötzingen, 79268
+            <br /> Germany
+          </p>
+          <p>+49 176 23725768</p>
+        </article>
+      </section>
+      <section>
         <form
           style={{
             width: "400px",
@@ -124,31 +149,6 @@ export default function Contact() {
             ></textarea>
           </div>
         </form>
-      </section>
-      <section>
-        <article>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4126.081761021525!2d7.715206033843513!3d48.06823365077311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479116d811b8255b%3A0x497aa1ecd4c99ddf!2sLa%20Speranza!5e0!3m2!1sen!2suk!4v1640799792587!5m2!1sen!2suk"
-            width="600"
-            title="Zulhul Makeup Salon"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-
-          <p>
-            Hi There, <br />I am looking forward to hearing from you. Please
-            feel free to get in touch via the form below, I will get back to you
-            as soon as possible.
-          </p>
-          <p>Zuhal Makeup Artist</p>
-          <p>
-            Bötzingen, 79268
-            <br /> Germany
-          </p>
-          <p>+49 176 23725768</p>
-        </article>
       </section>
     </>
   );
