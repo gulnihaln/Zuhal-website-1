@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
 export default function Contact() {
   const [name, setName] = useState("");
   const [contactNum, setContactNum] = useState("");
@@ -11,13 +10,13 @@ export default function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
- function clearInput() {
-   setName("");
-   setContactNum("");
-   setEmail("");
-   setTopic("");
-   setEnquiry("");
- }
+  function clearInput() {
+    setName("");
+    setContactNum("");
+    setEmail("");
+    setTopic("");
+    setEnquiry("");
+  }
   async function handleSubmit(e) {
     e.preventDefault();
     const mailerState = {
@@ -36,7 +35,7 @@ export default function Contact() {
       },
       body: JSON.stringify(mailerState),
     };
-    
+
     setSuccessMsg("Your Message was Received");
     clearInput();
 
@@ -46,7 +45,7 @@ export default function Contact() {
   return (
     <form
       style={{
-        width:"400px",
+        width: "400px",
         margin: "auto",
         placeItems: "center",
       }}
@@ -117,7 +116,7 @@ export default function Contact() {
           id="Enquiry"
           rows="3"
           required
-          value ={enquiry}
+          value={enquiry}
           onChange={(e) => setEnquiry(e.target.value)}
           placeholder="Please type your enquiry"
         ></textarea>
