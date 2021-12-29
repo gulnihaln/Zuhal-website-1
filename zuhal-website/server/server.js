@@ -20,12 +20,12 @@ let transporter = nodemailer.createTransport({
 });
 transporter.verify((err, success) => {
   err
-    ? console.log(err)
+    ? console.log("Error:", err)
     : console.log(`=== Server is ready to take messages: ${success} ===`);
 });
 
 app.post("/send", function (req, res) {
-  console.log(req.body);
+  // console.log(req.body);
   let mailOptions = {
     from: `${req.body.email}`,
     to: process.env.EMAIL,
@@ -36,17 +36,21 @@ app.post("/send", function (req, res) {
     message: ${req.body.enquiry}
     from:${req.body.email}`,
   };
-  // let mailOptions = req.body;
-  transporter.sendMail(mailOptions, function (err, data) {
-    if (err) {
-      console.log("Error " + err);
-    } else {
-      console.log("Email sent successfully");
-      res.json({
-        status: "success",
-      });
-    }
-  });
+ 
+   if ( !req.body.name || !req.body.contactNum || !req.body.email || !req.body.enquiry ){
+       return res.status(400).send({ MSG: `Missing information` });
+     }else {
+        transporter.sendMail(mailOptions, function (err, data) {
+          if (err) {
+            res.status(400).send(`Msg: Email hasn't been sent !!!`)
+          }else {
+            res.status(200).json({
+              status: "success",
+              msg: "Email sent successfully"
+            });
+          }
+    });
+  }
 });
 
 app.listen(port, () => {
