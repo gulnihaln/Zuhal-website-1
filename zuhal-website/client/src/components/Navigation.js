@@ -3,6 +3,12 @@ export default function Navigation() {
   return (
     <>
       <nav className="navbar">
+        <Link to="/">
+        <img
+          className="logo"
+          src="/zuhal-cropped-logo-3-white-pink-16-3.png"
+        ></img>
+        </Link>
         <Link to="/">Home</Link>
         <Link to="/aboutme">About Me</Link>
         <div className="dropdown">
