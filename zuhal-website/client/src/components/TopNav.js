@@ -1,17 +1,26 @@
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { MdAlternateEmail, MdPhoneIphone } from "react-icons/md";
+
 export default function TopNav() {
   return (
-    <>
-      <section>
-        <img src="https://via.placeholder.com/24x24" alt="placeholder" />
+    <section className="top-nav-container">
+      <article className="top-nav">
+        <MdPhoneIphone className="icon" />
         <p>Phone Number</p>
-        <img src="https://via.placeholder.com/24x24" alt="placeholder" />
+        <MdAlternateEmail className="icon" />
         <p>Email</p>
-      </section>
-      <section>
-        <img src="https://via.placeholder.com/24x24" alt="placeholder" />
-        <img src="https://via.placeholder.com/24x24" alt="placeholder" />
-        <img src="https://via.placeholder.com/24x24" alt="placeholder" />
-      </section>
-    </>
+      </article>
+      <article className="top-nav">
+        <a href="">
+          <BsFacebook className="social-icon" />
+        </a>
+        <a href="">
+          <BsInstagram className="social-icon" />
+        </a>
+        <a href="">
+          <BsTwitter className="social-icon" />
+        </a>
+      </article>
+    </section>
   );
 }
