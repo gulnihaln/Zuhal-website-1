@@ -37,19 +37,27 @@ app.post("/send", function (req, res) {
     from:${req.body.email}`,
   };
  
-   if ( !req.body.name || !req.body.contactNum || !req.body.email || !req.body.enquiry ){
-       return res.status(400).send({ MSG: `Missing information` });
-     }else {
-        transporter.sendMail(mailOptions, function (err, data) {
-          if (err) {
-            res.status(400).send(`Msg: Email hasn't been sent !!!`)
-          }else {
-            res.status(200).json({
-              status: "success",
-              msg: "Email sent successfully"
-            });
-          }
+   if (
+    !req.body.name ||
+    !req.body.contactNum ||
+    !req.body.email ||
+    !req.body.enquiry
+  ) {
+    return res.status(400).send({
+      msg: `Missing information`,
     });
+  } else {
+    transporter.sendMail(mailOptions, function (err, data) {
+      if (err) {
+        res.status(500).send({
+          msg: `Email hasn't been sent !!!`,
+        });
+      } else {
+        res.status(200).send({
+          msg: `Email has been sent successfully`,
+        });
+      }
+    })
   }
 });
 
