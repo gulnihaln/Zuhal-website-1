@@ -159,6 +159,11 @@ export default function Contact() {
               placeholder="Please type your enquiry"
             ></textarea>
           </div>
+          <div className="col-auto my-1">
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </div>
         </form>
       </section>
     </>
