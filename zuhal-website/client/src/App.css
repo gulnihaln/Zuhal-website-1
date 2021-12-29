@@ -1,7 +1,32 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+:root {
+  --chocolate: #5f393f;
+  --pink: #c9a9ab;
+  --grey: #666;
+  --white: #fff;
+  --black: #000;
+}
+
 .App {
   text-align: center;
 }
 
+body {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top-nav-container {
+  display: none;
+}
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +39,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--chocolate);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -76,7 +101,7 @@
 }
 .dropdown:hover .dropdown-content {
   display: block;
-  /* place-items: center;  */
+ 
 }
 .dropdown {
   overflow: hidden;
@@ -90,4 +115,36 @@
 }
 img {
   margin: 10px;
+} */
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 480px) {
+  /* top-nav styles */
+  .top-nav-container {
+    background-color: var(--pink);
+    align-items: center;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-nav p {
+    color: var(--black);
+    margin-bottom: 0;
+  }
+  .social-icon,
+  .icon {
+    color: var(--chocolate);
+    margin: 0 0.5rem;
+    transition: all 0.5s ease;
+  }
+  .social-icon:hover {
+    opacity: 0.8;
+  }
 }
