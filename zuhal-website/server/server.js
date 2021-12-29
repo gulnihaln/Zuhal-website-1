@@ -21,9 +21,7 @@ let transporter = nodemailer.createTransport({
 transporter.verify((err, success) => {
   err
     ? console.log(err)
-    : console.log(
-        `=== Server is ready to take messages: ${success} ===`
-      );
+    : console.log(`=== Server is ready to take messages: ${success} ===`);
 });
 
 app.post("/send", function (req, res) {
@@ -35,7 +33,7 @@ app.post("/send", function (req, res) {
     text: `
     tel :${req.body.contactNum}
     name:${req.body.name}
-    message: ${req.body.enquery}
+    message: ${req.body.enquiry}
     from:${req.body.email}`,
   };
   // let mailOptions = req.body;
