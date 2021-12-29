@@ -25,6 +25,7 @@ transporter.verify((err, success) => {
 });
 
 app.post("/send", function (req, res) {
+  // console.log(req.body);
   let mailOptions = {
     from: `${req.body.email}`,
     to: process.env.EMAIL,
@@ -35,8 +36,8 @@ app.post("/send", function (req, res) {
     message: ${req.body.enquiry}
     from:${req.body.email}`,
   };
-
-  if (
+ 
+   if (
     !req.body.name ||
     !req.body.contactNum ||
     !req.body.email ||
@@ -56,7 +57,7 @@ app.post("/send", function (req, res) {
           msg: `Email has been sent successfully`,
         });
       }
-    });
+    })
   }
 });
 
