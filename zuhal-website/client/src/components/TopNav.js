@@ -1,6 +1,6 @@
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { MdAlternateEmail, MdPhoneIphone } from "react-icons/md";
-
+import "./styles/TopNav.css";
 export default function TopNav() {
   return (
     <section className="top-nav-container">

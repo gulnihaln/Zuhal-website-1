@@ -25,3 +25,10 @@
 .social-icon:hover {
   opacity: 0.8;
 }
+
+@media screen and (min-width: 480px) {
+  /* top-nav styles */
+  .top-nav-container {
+    display: flex;
+  }
+}
