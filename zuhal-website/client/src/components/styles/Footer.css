@@ -1,0 +1,112 @@
+/* footer styles */
+.footer {
+  width: 100vw;
+  background-color: var(--chocolate);
+  display: flex;
+  flex-direction: column;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 10px;
+  color: var(--black);
+}
+.footer-links ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+.footer-links li {
+  list-style: none;
+  padding: 0.8rem;
+  border-bottom: 1px solid #eeeeee50;
+}
+.footer-links a {
+  color: var(--lightgrey);
+  text-decoration: none;
+}
+.social-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+footer .social-icon {
+  color: var(--pink);
+  margin: 0 20px;
+}
+.footer p {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--lightgrey);
+  font-size: 0.8rem;
+}
+.footer-logo {
+  order: -1;
+}
+
+@media screen and (min-width: 480px) {
+  /* footer styles */
+  .footer-links {
+    flex-direction: row;
+  }
+  .left-footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 30px;
+  }
+  .left-footer-links li {
+    text-align: start;
+  }
+  .right-footer-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+  .right-footer-links li {
+    text-align: end;
+  }
+  .footer-links li {
+    padding: 1rem;
+    border-bottom: none;
+  }
+  .social-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer-logo {
+    padding-left: 0;
+    order: 0;
+    margin-right: 33px;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+  /* footer styles */
+  .social-icon-container a {
+    font-size: 1.5rem;
+  }
+  .footer-links {
+    justify-content: space-evenly;
+  }
+  .left-footer-links {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  .right-footer-links {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;  
+    margin-right: 0;
+  }
+  .footer-logo {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
