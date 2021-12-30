@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+
 export default function Footer() {
   return (
-    <footer>
-      <section>
-        <ul>
+    <footer className="footer">
+      <section className="footer-links">
+        <ul className="left-footer-links">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -11,10 +13,10 @@ export default function Footer() {
             <Link to="/loyaltyandgiftcard">Loyal & Gift Card</Link>
           </li>
         </ul>
-        <Link to="/">
-          <img src="https://via.placeholder.com/100x75.png" alt="" />
+        <Link className="footer-logo" to="/">
+          <img src="https://via.placeholder.com/60x45.png" alt="" />
         </Link>
-        <ul>
+        <ul className="right-footer-links">
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
@@ -23,26 +25,18 @@ export default function Footer() {
           </li>
         </ul>
       </section>
-      <section>
-        <ul>
-          <li>
-            <a href="http://localhost:3000/">
-              <i className="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://localhost:3000/">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://localhost:3000/">
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-        <p>&copy; Copyright Ping. All rights reserved.</p>
+      <section className="social-icon-container">
+        <a href="">
+          <BsFacebook className="social-icon" />
+        </a>
+        <a href="">
+          <BsInstagram className="social-icon" />
+        </a>
+        <a href="">
+          <BsTwitter className="social-icon" />
+        </a>
       </section>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
     </footer>
   );
 }
