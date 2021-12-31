@@ -1,0 +1,21 @@
+/* FAQ Questin and answers  styles*/
+.faq-qa-container {
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+}
+.faq-question {
+  cursor: pointer;
+  font-size: 1rem;
+}
+.faq-answer {
+  font-size: 0.75rem;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+  grid-column: 2/3;
+}
+.faq-answer.active {
+  opacity: 1;
+  height: auto;
+}
