@@ -1,25 +1,26 @@
 import React, { useState } from "react";
-import { GoChevronDown } from "react-icons/go";
+import { GoChevronDown, GoChevronRight } from "react-icons/go";
+import "./styles/FaqSection.css";
 
 export default function FaqSection({ question }) {
-  const [display, setDisplay] = useState("none");
+  const [activeClass, setActiveClass] = useState("");
+  const [isAnswerOpen, setIsAnswerOpen] = useState(false);
+  const listStyle = {
+    listStyleType: "none",
+  };
   return (
-    <ul>
-      <li>
-        <p
-          onClick={() =>
-            setDisplay((prev) => {
-              return prev === "none" ? "block" : "none";
-            })
-          }
-        >
-          <GoChevronDown />
-          {question.question}
-        </p>
-        <p style={{ display: `${display}` }}>
-          {question.answer}
-        </p>
-      </li>
-    </ul>
+    <li className="faq-qa-container" style={listStyle}>
+      <span>{isAnswerOpen ? <GoChevronDown /> : <GoChevronRight />}</span>
+      <p
+        className="faq-question"
+        onClick={() => {
+          setActiveClass((prev) => (prev === "active" ? "" : "active"));
+          setIsAnswerOpen((prev) => !prev);
+        }}
+      >
+        {question.question}
+      </p>
+      <p className={`faq-answer ${activeClass}`}>{question.answer}</p>
+    </li>
   );
 }
