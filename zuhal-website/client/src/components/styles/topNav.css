@@ -1,0 +1,34 @@
+/* top-nav styles */
+.top-nav-container {
+  background-color: var(--pink);
+  align-items: center;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav p {
+  color: var(--black);
+  margin-bottom: 0;
+}
+.social-icon,
+.icon {
+  color: var(--chocolate);
+  margin: 0 0.5rem;
+  transition: all 0.5s ease;
+}
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 480px) {
+  /* top-nav styles */
+  .top-nav-container {
+    display: flex;
+  }
+}
