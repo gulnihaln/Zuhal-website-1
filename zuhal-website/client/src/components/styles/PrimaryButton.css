@@ -1,0 +1,18 @@
+/* Button styles */
+button.button-primary {
+  background-color: var(--chocolate);
+  border: none;
+  border-radius: 28px;
+  color: var(--white);
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease;
+}
+button.button-primary:focus {
+  outline: none;
+}
+button.button-primary:hover {
+  box-shadow: #5f393f59 0px 5px 15px;
+  transform: translateY(-2px);
+}

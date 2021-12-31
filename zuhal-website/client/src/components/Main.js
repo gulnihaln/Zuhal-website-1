@@ -1,6 +1,6 @@
-
 import Slider from "./Slider";
 import { useEffect } from "react";
+import "./styles/PrimaryButton.css";
 
 export default function Main() {
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Main() {
           dolores explicabo. Non error suscipit saepe dolor, labore deleniti nam
           est?
         </p>
-        <button>Lorem ipsum</button>
+        <button className="button-primary">Lorem ipsum</button>
         <img src="" alt=""></img>
       </section>
       <section className="sectionQuote">
