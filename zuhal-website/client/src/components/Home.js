@@ -12,6 +12,7 @@ import Lessons from "./Lessons.js";
 import BrowThreadingAndTinting from "./BrowThreadingAndTinting.js";
 import Portfolio from "./Portfolio.js";
 import FaqPage from "./FaqPage";
+import "./styles/Main.css";
 
 export default function Home() {
   return (
