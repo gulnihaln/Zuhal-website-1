@@ -37,7 +37,7 @@ export default function Navigation() {
             Services
             <BsFillCaretDownFill />
           </button>
-<<<<<<< HEAD
+
           {dropdownOpen === true && (
             <div
               className="dropdown-content"
@@ -57,7 +57,7 @@ export default function Navigation() {
                 );
               })}
               {/* <Link to="/bridal">Bridal Hair & Makeup</Link>
-              <Link to="/dailyhairandmakeup">Day Hair & Makeup</Link>
+              <Link to="/dayhairandmakeup">Day Hair & Makeup</Link>
               <Link to="/eveninghairandmakeup">Evening Hair & Makeup</Link>
               <Link to="/browthreadingandtinting">
                 Brow Threading & Tinting
@@ -66,17 +66,6 @@ export default function Navigation() {
               <Link to="/lessons">Makeup Lessons</Link> */}
             </div>
           )}
-=======
-
-          <div className="dropdown-content">
-            <Link to="/bridal">Bridal Hair & Makeup</Link>
-            <Link to="/dayhairandmakeup">Day Hair & Makeup</Link>
-            <Link to="/eveninghairandmakeup">Evening Hair & Makeup</Link>
-            <Link to="/browthreadingandtinting">Brow Threading & Tinting</Link>
-            <Link to="/loyaltyandgiftcard">Loyalty & Gift Cards</Link>
-            <Link to="/lessons">Makeup Lessons</Link>
-          </div>
->>>>>>> 3ea5ca9aa7cc25cdd06c47bcfc2aa4b994859008
         </div>
         <Link to="/contact">
           <MdContactMail style={{ margin: "0 5 3 0" }} />

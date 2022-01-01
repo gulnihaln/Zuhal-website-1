@@ -5,7 +5,7 @@ export const dropdown = [
   },
   {
     title: "Day Hair & Makeup",
-    to: "/dailyhairandmakeup",
+    to: "/dayhairandmakeup",
   },
   {
     title: "Evening Hair & Makeup",
