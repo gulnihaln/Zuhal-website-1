@@ -1,9 +1,9 @@
-import "./styles/DailyHairAndMakeup.css";
+import "./styles/DayHairAndMakeup.css";
 
-export default function DailyHairAndMakeup() {
+export default function DayHairAndMakeup() {
   return (
     <>
-      <section className="daily-hair-and-makeup">
+      <section className="day-hair-and-makeup">
         <article className="intro-container">
           <img
             className="intro-img"
