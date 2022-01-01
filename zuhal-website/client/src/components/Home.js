@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import Main from "./Main";
 import AboutMe from "./AboutMe";
 import EveningHairAndMakeup from "./EveningHairAndMakeup";
-import DayHairAndMakeup from "./DayHairAndMakeup";
+import DayHairAndMakeup from "./DayHairAndMakeup.js";
 import LoyaltyAndGiftCard from "./LoyaltyAndGiftCard.js";
 import Lessons from "./Lessons.js";
 import BrowThreadingAndTinting from "./BrowThreadingAndTinting.js";
@@ -23,11 +23,7 @@ export default function Home() {
           <Route path="/" element={<Main />} />
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/bridal" element={<Wedding />} />
-<<<<<<< HEAD
-          <Route path="/dailyhairandmakeup" element={<DayHairAndMakeup />} />
-=======
           <Route path="/dayhairandmakeup" element={<DayHairAndMakeup />} />
->>>>>>> 3ea5ca9aa7cc25cdd06c47bcfc2aa4b994859008
           <Route
             path="/eveninghairandmakeup"
             element={<EveningHairAndMakeup />}
@@ -36,7 +32,6 @@ export default function Home() {
             path="/browthreadingandtinting"
             element={<BrowThreadingAndTinting />}
           />
-
           <Route path="/loyaltyandgiftcard" element={<LoyaltyAndGiftCard />} />
           <Route path="/lessons" element={<Lessons />} />
           <Route path="/contact" element={<Contact />} />
