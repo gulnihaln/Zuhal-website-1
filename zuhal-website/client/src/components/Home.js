@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import Main from "./Main";
 import AboutMe from "./AboutMe";
 import EveningHairAndMakeup from "./EveningHairAndMakeup";
-import DailyHairAndMakeup from "./DailyHairAndMakeup.js";
+import DayHairAndMakeup from "./DayHairAndMakeup.js";
 import LoyaltyAndGiftCard from "./LoyaltyAndGiftCard.js";
 import Lessons from "./Lessons.js";
 import BrowThreadingAndTinting from "./BrowThreadingAndTinting.js";
