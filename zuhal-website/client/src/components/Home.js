@@ -23,7 +23,11 @@ export default function Home() {
           <Route path="/" element={<Main />} />
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/bridal" element={<Wedding />} />
+<<<<<<< HEAD
           <Route path="/dailyhairandmakeup" element={<DayHairAndMakeup />} />
+=======
+          <Route path="/dayhairandmakeup" element={<DayHairAndMakeup />} />
+>>>>>>> 3ea5ca9aa7cc25cdd06c47bcfc2aa4b994859008
           <Route
             path="/eveninghairandmakeup"
             element={<EveningHairAndMakeup />}
