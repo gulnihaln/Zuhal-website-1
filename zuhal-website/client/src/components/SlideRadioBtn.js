@@ -6,14 +6,11 @@ export default function SlideRadioBtn({ setSlideIndex, images, slideIndex }) {
   return (
     <>
       {images.map((image, index) => (
-        <input
-          key={index}
-          type="radio"
-          name="react-radio-btn"
-          value={index}
-          checked={slideIndex === index}
+        <div
           onClick={() => handleRadioClick(index)}
-        ></input>
+          key={index}
+          className={`my-radio ${slideIndex === index ? "checked" : ""}`}
+        ></div>
       ))}
     </>
   );
