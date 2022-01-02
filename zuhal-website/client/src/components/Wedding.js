@@ -1,5 +1,5 @@
 import Slider from "./Slider";
-import { bridal } from "../faqData";
+import { bridal } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 
 export default function Wedding() {
@@ -37,7 +37,9 @@ export default function Wedding() {
           ipsam aspernatur minus eveniet, distinctio culpa pariatur quae
           doloremque sapiente.
         </p>
-        {bridal.map(question => <FaqSection question={question} /> )}
+        {bridal.map((question) => (
+          <FaqSection question={question} />
+        ))}
       </section>
     </>
   );

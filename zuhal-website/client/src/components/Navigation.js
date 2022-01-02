@@ -8,7 +8,6 @@ import "./styles/Navigation.css";
 
 export default function Navigation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  console.log(dropdownOpen);
 
   const openDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -32,6 +31,11 @@ export default function Navigation() {
           Home
         </Link>
         <Link to="/aboutme">About Me</Link>
+        <Link to="/contact">
+          <MdContactMail style={{ margin: "0 5 3 0" }} />
+          Contact
+        </Link>
+        <Link to="/portfolio">Portfolio</Link>
         <div className="dropdown" onMouseLeave={closeDropdown}>
           <button onClick={openDropdown} className="dropbtn">
             Services
@@ -41,7 +45,7 @@ export default function Navigation() {
           {dropdownOpen === true && (
             <div
               className="dropdown-content"
-              style={{ display: "flex", flexDirection: "column" }}
+              // style={{ position: "fixed", top: "0", right: "O" }}
             >
               {dropdown.map((data, index) => {
                 return (
@@ -56,22 +60,9 @@ export default function Navigation() {
                   </Link>
                 );
               })}
-              {/* <Link to="/bridal">Bridal Hair & Makeup</Link>
-              <Link to="/dayhairandmakeup">Day Hair & Makeup</Link>
-              <Link to="/eveninghairandmakeup">Evening Hair & Makeup</Link>
-              <Link to="/browthreadingandtinting">
-                Brow Threading & Tinting
-              </Link>
-              <Link to="/loyaltyandgiftcard">Loyalty & Gift Cards</Link>
-              <Link to="/lessons">Makeup Lessons</Link> */}
             </div>
           )}
         </div>
-        <Link to="/contact">
-          <MdContactMail style={{ margin: "0 5 3 0" }} />
-          Contact
-        </Link>
-        <Link to="/portfolio">Portfolio</Link>
       </nav>
     </>
   );

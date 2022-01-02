@@ -1,15 +1,11 @@
 import { dropdown } from "./DropdownData";
 import { Link } from "react-router-dom";
 
-export default function Dropdown({ dropdownOpen }) {
+export default function Dropdown() {
   return (
     <>
-      {dropdown.map((data, index) => {
-        return (
-          <Link onClick={dropdownOpen} key={index} to={data.to}>
-            {data.title}
-          </Link>
-        );
+      {dropdown.map((data) => {
+        return <Link to={data.to}>{data.title}</Link>;
       })}
     </>
   );
