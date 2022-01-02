@@ -1,0 +1,53 @@
+.loyalty-gift-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.loyalty-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.gift-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.loyalty-card-p,
+.gift-card-p {
+  text-align: center;
+  margin: 30px 10px 30px;
+}
+.evening-article-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .button-primary {
+
+} */
+
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+ .loyalty-card-container {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+ }
+ .gift-card-container {
+     grid-template-columns: 1fr 1fr;
+ }
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+  /* .loyalty-gift-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .gift-card-container {
+      flex-direction: column-reverse;
+  }
+  .gift-card-container button {
+      order: -1;
+  } */
+
+}

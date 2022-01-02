@@ -10,7 +10,7 @@
   max-width: 400px;
 }
 
-.bridal-faq {
+.faq-section {
   background-color: #eee;
   color: var(--chocolate);
   /* color: var(--pink); */
@@ -20,24 +20,24 @@
   margin: 1rem auto;
   padding: 1rem 2rem;
 }
-.bridal-faq h2 {
+.faq-section h2 {
   border-bottom: 4px solid var(--pink);
   border-radius: 4px;
   margin: 1rem auto;
   padding-bottom: 1rem;
   width: max-content;
 }
-.bridal-faq h2 span {
+.faq-section h2 span {
   font-size: 1rem;
   font-weight: 300;
   padding-bottom: 1rem;
   letter-spacing: 2px;
   display: block;
 }
-.bridal-faq article p {
+.faq-section article p {
   font-size: 0.8rem;
 }
-.bridal-faq-paragraph {
+.faq-section-paragraph {
   width: 80vw;
   text-align: justify;
 }
@@ -50,18 +50,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .bridal-faq {
+  .faq-section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: 1rem 5rem;
   }
-  .bridal-faq h2 {
+  .faq-section h2 {
     margin: 1rem 0;
   }
-  .bridal-faq article {
+  .faq-section article {
     max-width: 80%;
   }
-  .bridal-faq-paragraph {
+  .faq-section-paragraph {
     width: inherit;
   }
 }

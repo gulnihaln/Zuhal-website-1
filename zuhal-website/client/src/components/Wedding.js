@@ -31,13 +31,12 @@ export default function Wedding() {
           </p>
         </article>
       </section>
-
-      <section className="bridal-faq">
+      <section className="faq-section">
         <article>
           <h2>
             <span>WEDDING MAKEUP</span> FAQ
           </h2>
-          <p className="bridal-faq-paragraph">
+          <p className="faq-section-paragraph">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sed
             ipsam aspernatur minus eveniet, distinctio culpa pariatur quae
             doloremque sapiente.
