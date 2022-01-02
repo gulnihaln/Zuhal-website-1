@@ -2,7 +2,13 @@ import React, { useState, useEffect } from "react";
 import Slider from "./Slider";
 import FaqSection from "./FaqSection";
 import "./styles/FaqPage.css";
-import { covid, bridal, dailyMakeUp, eveningMakeUp, contact } from "../faqData";
+import {
+  covid,
+  bridal,
+  dayMakeUp,
+  eveningMakeUp,
+  contact,
+} from "../utils/faqData";
 export default function FaqPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,15 +53,13 @@ export default function FaqPage() {
             Bridal
           </h4>
           <h4
-            className={
-              questionsHeading === "Daily Hair & Makeup" ? "active" : ""
-            }
+            className={questionsHeading === "Day Hair & Makeup" ? "active" : ""}
             onClick={() => {
-              setQuestionsData(dailyMakeUp);
-              setQuestionsHeading("Daily Hair & Makeup");
+              setQuestionsData(dayMakeUp);
+              setQuestionsHeading("Day Hair & Makeup");
             }}
           >
-            Daily Hair & Makeup
+            Day Hair & Makeup
           </h4>
           <h4
             className={
