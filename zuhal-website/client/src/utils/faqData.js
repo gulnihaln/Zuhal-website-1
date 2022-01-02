@@ -43,7 +43,7 @@ export const bridal = [
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
 ];
-export const dailyMakeUp = [
+export const dayMakeUp = [
   {
     question:
       "Daily Hair & Makeup Questions will be !!! Do I have to wear face coverings during the COVID-19 pandemic?",
