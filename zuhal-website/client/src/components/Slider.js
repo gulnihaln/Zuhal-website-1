@@ -30,14 +30,13 @@ export default function Slider({ images }) {
         }}
         className="slider-img-container"
       >
-        {/* <img src={images[slideIndex].src}></img> */}
-      </div>
-      <div className="slider-btn-container">
-        <SlideRadioBtn
-          setSlideIndex={setSlideIndex}
-          slideIndex={slideIndex}
-          images={images}
-        />
+        <div className="slider-btn-container">
+          <SlideRadioBtn
+            setSlideIndex={setSlideIndex}
+            slideIndex={slideIndex}
+            images={images}
+          />
+        </div>
       </div>
     </section>
   );

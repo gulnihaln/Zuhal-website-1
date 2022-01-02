@@ -1,0 +1,67 @@
+/* Bridal page styles */
+.bridal-article {
+  display: grid;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.bridal-article p {
+  padding: 1rem;
+  max-width: 400px;
+}
+
+.bridal-faq {
+  background-color: #eee;
+  color: var(--chocolate);
+  /* color: var(--pink); */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+}
+.bridal-faq h2 {
+  border-bottom: 4px solid var(--pink);
+  border-radius: 4px;
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  width: max-content;
+}
+.bridal-faq h2 span {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  letter-spacing: 2px;
+  display: block;
+}
+.bridal-faq article p {
+  font-size: 0.8rem;
+}
+.bridal-faq-paragraph {
+  width: 80vw;
+  text-align: justify;
+}
+
+@media screen and (min-width: 992px) {
+  .bridal-article {
+    display: grid;
+  }
+  .bridal-article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bridal-faq {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 1rem 5rem;
+  }
+  .bridal-faq h2 {
+    margin: 1rem 0;
+  }
+  .bridal-faq article {
+    max-width: 80%;
+  }
+  .bridal-faq-paragraph {
+    width: inherit;
+  }
+}
