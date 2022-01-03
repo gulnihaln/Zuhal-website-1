@@ -1,8 +1,10 @@
+import "./styles/AboutMe.css";
+
 export default function AboutMe() {
   return (
     < div id="aboutMe">
       <section className="aboutMe-section1">
-        <article id=" aboutMe-section1-artcle">
+        <article id=" aboutMe-section1-article">
           <h1 id=" aboutMe-section1-h">Lorem ipsum dolor sit amet.</h1>
           <p id="aboutMe-section1-p">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt,
@@ -14,8 +16,8 @@ export default function AboutMe() {
         <img
           src="https://via.placeholder.com/350x150"
           alt="xxx"
-          width="500"
-          height="800"
+          // width="500"
+          // height="800"
         />
       </section>
       <section className="aboutMe-section2">

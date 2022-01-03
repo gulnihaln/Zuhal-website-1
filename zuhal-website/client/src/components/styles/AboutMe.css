@@ -1,9 +1,14 @@
 /*AboutMe stylle*/
 
+.aboutMe-section1 p,
+ .aboutMe-section1 h1 {
+   margin: 30px 10px 30px;
+}
 
 .aboutMe-section1 {
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -22,8 +27,10 @@
   box-shadow: #5f393f59 0px 5px 15px;
   transform: translateY(-2px);
   width: 130px;
-  margin-left: 50%;
-  margin-right: 50%;
+  display: block;
+  margin:0 auto;
+  
+ 
     
   
  
@@ -49,7 +56,7 @@
 
 
 .aboutMe-section1 h1 {
- margin-top: 40%;
+ align-self: center;
 }
 
 
