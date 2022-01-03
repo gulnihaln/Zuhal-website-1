@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <>
+    < div id="aboutMe">
       <section className="aboutMe-section1">
         <article id=" aboutMe-section1-artcle">
           <h1 id=" aboutMe-section1-h">Lorem ipsum dolor sit amet.</h1>
@@ -24,7 +24,7 @@ export default function AboutMe() {
           ad odit ut. Sit cumque dolores perspiciatis repudiandae esse molestias
           iure?
         </p>
-        <p id="aboutMe-section2-p2">Lorem ipsum dolor.</p>
+        <button id="aboutMe-section2-button">Lorem ipsum dolor.</button>
       </section>
       <section className="aboutMe-section3">
         <h1 id="aboutMe-section3-h">Snap photos and share like never before</h1>
@@ -67,6 +67,6 @@ export default function AboutMe() {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 }
