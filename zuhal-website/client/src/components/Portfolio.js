@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import GalleryCard from "./GalleryCard";
-import { bridal, commercial, beauty, occasions } from "./imagesData";
+import { bridal, commercial, beauty, occasions } from "../utils/imagesData";
 
 export default function Portfolio() {
   const [activeGalleryImages, setActiveGalleryImages] = useState([]);

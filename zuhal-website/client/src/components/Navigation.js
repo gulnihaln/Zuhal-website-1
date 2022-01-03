@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { BsFillCaretDownFill } from "react-icons/bs";
-import { dropdown } from "./DropdownData";
+import { dropdown } from "../utils/DropdownData";
 import { MdContactMail } from "react-icons/md";
 import "./styles/Navigation.css";
 
 export default function Navigation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
 
   const openDropdown = () => {
     setDropdownOpen(!dropdownOpen);
