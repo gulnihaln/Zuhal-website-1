@@ -1,23 +1,17 @@
-import { useState } from "react"
-
-export default function SlideRadioBtn({ setSlideIndex, images }) {
-  
+export default function SlideRadioBtn({ setSlideIndex, images, slideIndex }) {
   const handleRadioClick = (value) => {
-      setSlideIndex(+value)
-    };
+    setSlideIndex(+value);
+  };
 
   return (
     <>
-        {images.map((image, index) => 
-            <input
-              key={index}
-              type="radio"
-              name="react-radio-btn"
-              value={index}
-              onClick={() => handleRadioClick(index)}
-            ></input>
-
-        )}
+      {images.map((image, index) => (
+        <div
+          onClick={() => handleRadioClick(index)}
+          key={index}
+          className={`my-radio ${slideIndex === index ? "checked" : ""}`}
+        ></div>
+      ))}
     </>
-  )
+  );
 }

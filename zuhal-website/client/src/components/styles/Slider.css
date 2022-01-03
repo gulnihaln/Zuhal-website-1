@@ -1,0 +1,33 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider-img-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 500px;
+  width: 100%;
+}
+
+.my-radio {
+  background-color: none;
+  border: 1px solid #5f393f3f;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 4px;
+  margin: 2px;
+  width: 18px;
+}
+.my-radio.checked {
+  background-color: #5f393f81;
+}
+
+.slider-btn-container {
+  display: flex;
+}

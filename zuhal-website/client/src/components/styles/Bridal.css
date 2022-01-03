@@ -1,0 +1,21 @@
+/* Bridal page styles */
+.bridal-article {
+  display: grid;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.bridal-article p {
+  padding: 1rem;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 992px) {
+  .bridal-article {
+    display: grid;
+  }
+  .bridal-article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import "./styles/Footer.css"
+import "./styles/Footer.css";
 
 export default function Footer() {
   return (
