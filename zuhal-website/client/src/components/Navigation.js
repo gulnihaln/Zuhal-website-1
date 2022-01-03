@@ -8,7 +8,7 @@ import "./styles/Navigation.css";
 
 export default function Navigation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
 
   const openDropdown = () => {
     setDropdownOpen(!dropdownOpen);
