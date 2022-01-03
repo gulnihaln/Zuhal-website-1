@@ -4,6 +4,8 @@ import { FaHome } from "react-icons/fa";
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { dropdown } from "../utils/DropdownData";
 import { MdContactMail } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { GrGallery } from "react-icons/gr";
 import "./styles/Navigation.css";
 
 export default function Navigation() {
@@ -19,6 +21,9 @@ export default function Navigation() {
 
   return (
     <>
+      <div className="hamburger-menu">
+        <GiHamburgerMenu size={40} />
+      </div>
       <nav className="navbar">
         <Link to="#">
           <img
@@ -36,7 +41,10 @@ export default function Navigation() {
           <MdContactMail style={{ margin: "0 5 3 0" }} />
           Contact
         </Link>
-        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/portfolio">
+          <GrGallery style={{ color: "white" }} />
+          Portfolio
+        </Link>
         <div className="dropdown" onMouseLeave={closeDropdown}>
           <button onClick={openDropdown} className="dropbtn">
             Services
