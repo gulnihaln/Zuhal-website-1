@@ -1,4 +1,5 @@
 import "./styles/Lessons.css";
+import { Link } from "react-router-dom";
 export default function Lessons() {
   return (
     <section className="lessons-container">
@@ -11,7 +12,9 @@ export default function Lessons() {
           modi, harum, omnis reprehenderit a molestiae quidem exercitationem qui
           ipsam quas nam quisquam.
         </p>
-        <button className="button-primary">Contact With Us</button>
+        <Link to={"/contact"}>
+          <button className="button-primary">Contact With Us</button>
+        </Link>
       </article>
       <div className="lessons-image"></div>
     </section>
