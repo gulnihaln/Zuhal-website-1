@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./styles/LoyaltyAndGiftCard.css";
-// import { BsFillGiftFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function LoyaltyAndGiftCard() {
   useEffect(() => {
@@ -22,7 +22,9 @@ export default function LoyaltyAndGiftCard() {
               accusamus natus magni placeat quis eaque libero dolore ab
               dignissimos ea in, fugiat delectus.
             </p>
-            <button className="button-primary">Click</button>
+            <Link to={"/contact"}>
+              <button className="button-primary">Register for Loyalty Card</button>
+            </Link>
           </article>
         </section>
         <section className="gift-card-container">
@@ -33,7 +35,9 @@ export default function LoyaltyAndGiftCard() {
               accusamus natus magni placeat quis eaque libero dolore ab
               dignissimos ea in, fugiat delectus.
             </p>
-            <button className="button-primary">Click</button>
+            <Link to={"/contact"}>
+              <button className="button-primary">Register for Gift Card</button>
+            </Link>
           </article>
           <img
             className="gift-card-img"
