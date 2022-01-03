@@ -1,0 +1,108 @@
+/*AboutMe stylle*/
+
+
+.aboutMe-section1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.aboutMe-section2 {
+
+    text-align: center;
+     margin-top:5rem;
+}
+
+  .aboutMe-section2 button {
+ background-color: var(--pink);
+ border-radius :28px;
+  box-shadow: #5f393f59 0px 5px 15px;
+  transform: translateY(-2px);
+  width: 130px;
+  margin-left: 50%;
+  margin-right: 50%;
+    
+  
+ 
+  }
+
+.aboutMe-section3{
+ margin-top:5rem;
+ text-align: center;
+}
+.aboutMe-section4 {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+.aboutMe-section1{
+    display: flex;
+    flex-direction: row;
+ 
+    
+    
+}
+
+
+
+.aboutMe-section1 h1 {
+ margin-top: 40%;
+}
+
+
+.aboutMe-section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.aboutMe-section4{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+     
+}
+.aboutMe-section4-div{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   margin: 5rem;
+}
+#aboutMe {
+    width: 100vw;
+}
+}
+
+@media screen and (max-width: 1250px) {
+   /* .aboutMe-section1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .aboutMe-section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+        background-color: var(--pink);
+
+    }
+
+    .aboutMe-section3 {
+        margin: 5rem;
+    }*/
+    #aboutMe {
+        width: 100vw;
+    }
+
+    .aboutMe-section4 {
+        display: flex;
+        flex-direction: column;
+    }
+}
