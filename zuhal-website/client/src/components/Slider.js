@@ -6,10 +6,10 @@ export default function Slider({ images }) {
   const [slideIndex, setSlideIndex] = useState(1);
 
   useEffect(() => {
-    const intervalId = setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       nextSlide();
     }, 5000);
-    return () => clearInterval(intervalId);
+    return () => clearTimeout(timeoutId);
   });
 
   const nextSlide = () => {
