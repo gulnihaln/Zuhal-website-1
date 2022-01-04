@@ -1,49 +1,52 @@
-export const bridal = [
+const images = [
   {
-    titl: "Bridal",
+    id: "0",
+    title: "Bridal",
     src: "https://via.placeholder.com/600x350.png",
     alt: "xxxx",
   },
   {
-    titl: "Bridal",
+    id: "1",
+    title: "Bridal",
     src: "https://via.placeholder.com/600x351.png",
     alt: "xxxx",
   },
   {
-    titl: "Bridal",
+    id: "2",
+    title: "Bridal",
     src: "https://via.placeholder.com/600x352.png",
     alt: "xxxx",
   },
-];
-export const beauty = [
   {
-    titl: "Beauty and Editorial",
+    id: "3",
+    title: "Beauty and Editorial",
     src: "https://via.placeholder.com/600x353.png",
     alt: "xxxx",
   },
   {
-    titl: "Beauty and Editorial",
+    id: "4",
+    title: "Beauty and Editorial",
     src: "https://via.placeholder.com/600x354.png",
     alt: "xxxx",
   },
-];
-export const occasions = [
   {
-    titl: "Occasions",
+    id: "5",
+    title: "Occasions",
     src: "https://via.placeholder.com/600x355.png",
     alt: "xxxx",
   },
   {
-    titl: "Occasions",
+    id: "6",
+    title: "Occasions",
     src: "https://via.placeholder.com/600x356.png",
     alt: "xxxx",
   },
-];
-
-export const commercial = [
   {
-    titl: "Commercial",
+    id: "7",
+    title: "Commercial",
     src: "https://via.placeholder.com/600x357.png",
     alt: "xxxx",
   },
 ];
+
+export default images
