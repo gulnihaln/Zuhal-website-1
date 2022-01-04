@@ -1,59 +1,35 @@
-import React, { useState } from "react";
-import GalleryCard from "./GalleryCard";
-import { bridal, commercial, beauty, occasions } from "../utils/imagesData";
+import React, { useState, useEffect, useRef } from "react";
+import './styles/Portfolio.css'
+import imagesData from "../utils/imagesData";
+import PortfolioGallery from './PortfolioGallery'
+import PortfolioCategories from './PortfolioCategories'
 
 export default function Portfolio() {
-  const [activeGalleryImages, setActiveGalleryImages] = useState([]);
-  const [galleryStyle, setGalleryStyle] = useState("");
+  const ref = useRef()
+  const [category, setCategory] = useState(null);
+  const categories = [...new Set(
+    imagesData.map(imgData => imgData.category)
+  )]
+
+  useEffect(() => {
+    ref.current.scrollIntoView({
+      behavior: "smooth"
+    })
+  }, [])
 
   return (
-    <>
-      <section>
-        <h1>PORTFOLIO </h1>
-        <img src="https://via.placeholder.com/640x332.png" alt="" />
-        <button
-          style={{ border: "none" }}
-          onClick={() => {
-            setActiveGalleryImages(bridal);
-            setGalleryStyle("bridal");
-          }}
-        >
-          Bridal Gallery
-        </button>
-        <img src="https://via.placeholder.com/640x332.png" alt="" />
-        <button
-          style={{ border: "none" }}
-          onClick={() => {
-            setActiveGalleryImages(beauty);
-            setGalleryStyle("beauty");
-          }}
-        >
-          Beauty/Editorial Gallery
-        </button>
-        <img src="https://via.placeholder.com/640x332.png" alt="" />
-        <button
-          style={{ border: "none" }}
-          onClick={() => {
-            setActiveGalleryImages(occasions);
-            setGalleryStyle("occasions");
-          }}
-        >
-          Occasions Gallery
-        </button>
-        <img src="https://via.placeholder.com/640x332.png" alt="" />
-        <button
-          style={{ border: "none" }}
-          onClick={() => {
-            setActiveGalleryImages(commercial);
-            setGalleryStyle("commercial");
-          }}
-        >
-          Commercial Gallery
-        </button>
+      <section 
+        ref={ref}
+        className="portfolio">
+        <PortfolioCategories 
+          categories={categories}
+          setCategory={setCategory} />
+
+        { category && 
+          <PortfolioGallery 
+            category={category}
+            setCategory={setCategory}/> 
+        }
       </section>
-      <section className={`${galleryStyle}-gallery gallery-main`}>
-        <GalleryCard images={activeGalleryImages} />
-      </section>
-    </>
   );
 }
