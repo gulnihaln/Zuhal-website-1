@@ -12,8 +12,6 @@ export default function Slider({ images }) {
     return () => clearInterval(intervalId);
   });
 
-  console.log(slideIndex);
-
   const nextSlide = () => {
     if (slideIndex !== images.length - 1) {
       setSlideIndex(slideIndex + 1);
