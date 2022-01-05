@@ -1,15 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import './styles/Portfolio.css'
-import imagesData from "../utils/imagesData";
 import PortfolioGallery from './PortfolioGallery'
 import PortfolioCategories from './PortfolioCategories'
 
 export default function Portfolio() {
   const ref = useRef()
   const [category, setCategory] = useState(null);
-  const categories = [...new Set(
-    imagesData.map(imgData => imgData.category)
-  )]
+  const categories = ["Bridal", "Occasions", "Beauty and Editorial", "Commercial",]
 
   useEffect(() => {
     ref.current.scrollIntoView({
