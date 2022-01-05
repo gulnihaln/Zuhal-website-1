@@ -16,12 +16,15 @@ export default function FaqPage() {
   const images = [
     {
       src: "https://i2.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/04/MG_8459dsdfddd.jpg?fit=1920%2C1362&ssl=1",
+      alt: "a woman inside the pink curtain ",
     },
     {
       src: "https://i0.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/04/3.jpg?fit=1920%2C2485&ssl=1",
+      alt: "a woman with flower",
     },
     {
       src: "https://i1.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/04/MG_7312ds.jpg?fit=1920%2C2707&ssl=1",
+      alt: "woman with colored eyebrows",
     },
   ];
   const [questionsData, setQuestionsData] = useState(covid);

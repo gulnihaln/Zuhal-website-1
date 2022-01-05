@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SlideRadioBtn from "./SlideRadioBtn";
 import "./styles/Slider.css";
-
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 export default function Slider({ images }) {
   const [slideIndex, setSlideIndex] = useState(1);
 
@@ -22,12 +22,15 @@ export default function Slider({ images }) {
 
   return (
     <section className="slider-container">
-      <div
-        style={{
-          backgroundImage: `url(${images[slideIndex].src})`,
-        }}
-        className="slider-img-container"
-      >
+      <div className="slider-img-container">
+        <TransitionGroup component={null}>
+          <CSSTransition key={slideIndex} timeout={2000} classNames={"slide"}>
+            <img
+              src={`${images[slideIndex].src}`}
+              alt={images[slideIndex].alt}
+            />
+          </CSSTransition>
+        </TransitionGroup>
         <div className="slider-btn-container">
           <SlideRadioBtn
             setSlideIndex={setSlideIndex}
