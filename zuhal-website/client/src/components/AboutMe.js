@@ -1,10 +1,12 @@
+import "./styles/AboutMe.css";
+
 export default function AboutMe() {
   return (
-    < div id="aboutMe">
+    <div className="aboutMe">
       <section className="aboutMe-section1">
-        <article id=" aboutMe-section1-artcle">
-          <h1 id=" aboutMe-section1-h">Lorem ipsum dolor sit amet.</h1>
-          <p id="aboutMe-section1-p">
+        <article className=" aboutMe-section1-article">
+          <h1 className=" aboutMe-section1-h">Lorem ipsum dolor sit amet.</h1>
+          <p className="aboutMe-section1-p">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt,
             tempora assumenda blanditiis provident iusto vero eius culpa impedit
             error quis necessitatibus vitae doloremque omnis doloribus neque
@@ -14,21 +16,23 @@ export default function AboutMe() {
         <img
           src="https://via.placeholder.com/350x150"
           alt="xxx"
-          width="500"
-          height="800"
+          width="350"
+          height="600"
         />
       </section>
       <section className="aboutMe-section2">
-        <p id="aboutMe-section2-p">
+        <p className="aboutMe-section2-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           ad odit ut. Sit cumque dolores perspiciatis repudiandae esse molestias
           iure?
         </p>
-        <button id="aboutMe-section2-button">Lorem ipsum dolor.</button>
+        <button className="button-primary">Lorem ipsum .</button>
       </section>
       <section className="aboutMe-section3">
-        <h1 id="aboutMe-section3-h">Snap photos and share like never before</h1>
-        <p id="aboutMe-section3-p">
+        <h1 className="aboutMe-section3-h">
+          Snap photos and share like never before
+        </h1>
+        <p className="aboutMe-section3-p">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
           pariatur quod, quaerat officia fugiat accusantium, porro omnis
           laboriosam impedit necessitatibus aliquam ullam esse expedita tempora
