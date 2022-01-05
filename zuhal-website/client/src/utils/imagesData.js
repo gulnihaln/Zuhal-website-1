@@ -22,14 +22,14 @@ const images = [
   },
   {
     id: "3",
-    title: "Beauty and Editorial",
+    title: "Beauty/Editorial",
     src: "https://via.placeholder.com/600x353.png",
     alt: "beauty and editorial",
     category: "Beauty and Editorial",
   },
   {
     id: "4",
-    title: "Beauty and Editorial",
+    title: "Beauty/Editorial",
     src: "https://via.placeholder.com/600x354.png",
     alt: "beauty and editorial",
     category: "Beauty and Editorial",
