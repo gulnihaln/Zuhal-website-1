@@ -6,8 +6,9 @@ export default function PortfolioCategories({
 }) {
     return (
         <div className="portfolio-categories">
-        {categories.map(category => 
-            <PortfolioCategoryBttn 
+        {categories.map((category, i) => 
+            <PortfolioCategoryBttn
+                key={`portfolio-category${i}`}
                 setCategory={setCategory} 
                 category={category}
             />
