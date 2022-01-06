@@ -23,7 +23,24 @@ transporter.verify((err, success) => {
     ? console.log("Error:", err)
     : console.log(`=== Server is ready to take messages: ${success} ===`);
 });
-
+const path = require("path");
+app.use(
+  "/uploads/bridal",
+  express.static(path.join(__dirname, "uploads/bridal"))
+);
+app.use(
+  "/uploads/commercial",
+  express.static(path.join(__dirname, "uploads/commercial"))
+);
+app.use(
+  "/uploads/editorial",
+  express.static(path.join(__dirname, "uploads/editorial"))
+);
+app.use("/uploads/logo", express.static(path.join(__dirname, "uploads/logo")));
+app.use(
+  "/uploads/specialOccasions",
+  express.static(path.join(__dirname, "uploads/specialOccasions"))
+);
 app.post("/send", function (req, res) {
   // console.log(req.body);
   let mailOptions = {
@@ -36,8 +53,8 @@ app.post("/send", function (req, res) {
     message: ${req.body.enquiry}
     from:${req.body.email}`,
   };
- 
-   if (
+
+  if (
     !req.body.name ||
     !req.body.contactNum ||
     !req.body.email ||
@@ -57,7 +74,7 @@ app.post("/send", function (req, res) {
           msg: `Email has been sent successfully`,
         });
       }
-    })
+    });
   }
 });
 
