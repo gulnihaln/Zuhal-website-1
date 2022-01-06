@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./styles/Contact.css";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -49,122 +50,125 @@ export default function Contact() {
       }
     } catch (error) {
       setSuccessMsg(
-        `Ooops!! Sorry, something went wrong. Check your Internet connection and try again later or you can contact me at zuhalinfo@zuhalmakeup.com`
+        `Ooops!! Sorry, something went wrong. Check your Internet connection and try again later or you can contact me at
+zuhalinfo@zuhalmakeup.com`
       );
     }
   }
   return (
     <>
-      <section>
-        <article>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4126.081761021525!2d7.715206033843513!3d48.06823365077311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479116d811b8255b%3A0x497aa1ecd4c99ddf!2sLa%20Speranza!5e0!3m2!1sen!2suk!4v1640799792587!5m2!1sen!2suk"
-            width="600"
-            title="Zulhal Makeup Salon"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-
+      <section className="contact-page-main-container">
+        <section className="contact-text-container">
+          <h2 className="contact-header">Contact us</h2>
+          <div className="border-box-bottom"></div>
           <p>
             Hi There, <br />I am looking forward to hearing from you. Please
             feel free to get in touch via the form below, I will get back to you
             as soon as possible.
+            <br />
+            <br />
+            Zuhal Makeup Artist
           </p>
-          <p>Zuhal Makeup Artist</p>
-          <p>
-            Bötzingen, 79268
-            <br /> Germany
-          </p>
-          <p>+49 176 23725768</p>
-        </article>
-      </section>
-      <section>
-        <form
-          style={{
-            width: "400px",
-            margin: "auto",
-            placeItems: "center",
-          }}
-          onSubmit={handleSubmit}
-        >
-          <div className="form-row align-items-center">
-            {successMsg && (
-              <div>
-                <h1>{successMsg}</h1>
-              </div>
-            )}
-            <label htmlFor="name">Your Name</label>
-            <input
-              type="text"
-              className="form-control"
-              id="name"
-              placeholder="Your Name"
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              minLength="2"
-            />
-            <label htmlFor="phoneNumber">Contact Number</label>
-            <input
-              type="tel"
-              className="form-control"
-              id="phoneNumber"
-              placeholder="123 456 7890"
-              required
-              value={contactNum}
-              onChange={(e) => setContactNum(e.target.value)}
-              minLength="11"
-            />
-            <label htmlFor="email">Email address</label>
-            <input
-              type="email"
-              className="form-control"
-              id="email"
-              placeholder="name@example.com"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="form-row align-items-center">
-            <label htmlFor="text-area">Topic of enquiry</label>
-            <select
-              className="form-control"
-              id="text-area"
-              value={topic}
-              onChange={(e) => setTopic(e.target.value)}
-            >
-              <option value="">Please Select</option>
-              <option value="Bridal">Bridal Hair & Makeup</option>
-              <option value="Evening Makeup">Evening Hair & Makeup</option>
-              <option value="Day Makeup">Day Hair & Makeup</option>
-              <option value="Covid-19">Covid-19</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
+        </section>
+        <section className="contact-form-container">
+          <form onSubmit={handleSubmit}>
+            <div className="form-info">
+              {successMsg && (
+                <div>
+                  <h1>{successMsg}</h1>
+                </div>
+              )}
+              <label htmlFor="name" className="form-label-text">
+                Your Name
+              </label>
+              <input
+                type="text"
+                className="form-input"
+                id="name"
+                placeholder="Your Name"
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                minLength="2"
+              />
+              <label htmlFor="phoneNumber" className="form-label-text">
+                Contact Number
+              </label>
+              <input
+                type="tel"
+                className="form-input"
+                id="phoneNumber"
+                placeholder="0000 000 0000"
+                required
+                value={contactNum}
+                onChange={(e) => setContactNum(e.target.value)}
+                minLength="11"
+              />
+              <label htmlFor="email" className="form-label-text">
+                Email address
+              </label>
+              <input
+                type="email"
+                className="form-input"
+                id="email"
+                placeholder="name@example.com"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="form-option-container">
+              <label htmlFor="text-area" className="form-label-text">
+                Topic of enquiry
+              </label>
+              <select
+                className="form-input"
+                id="text-area"
+                value={topic}
+                onChange={(e) => setTopic(e.target.value)}
+              >
+                <option value="">Please Select</option>
+                <option value="Bridal">Bridal Hair & Makeup</option>
+                <option value="Evening Makeup">Evening Hair & Makeup</option>
+                <option value="Day Makeup">Day Hair & Makeup</option>
+                <option value="Covid-19">Covid-19</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
 
-          <div className="form-row align-items-center">
-            <label htmlFor="Enquiry">
-              Please type your enquiry in the area provided
-            </label>
-            <textarea
-              className="form-control"
-              id="Enquiry"
-              rows="3"
-              required
-              value={enquiry}
-              onChange={(e) => setEnquiry(e.target.value)}
-              placeholder="Please type your enquiry"
-            ></textarea>
-          </div>
-          <div className="col-auto my-1">
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
-          </div>
-        </form>
+            <div className="form-messagebox-container">
+              <label htmlFor="Enquiry" className="form-label-text">
+                Please type your enquiry in the area provided
+              </label>
+              <textarea
+                className="form-input"
+                id="Enquiry"
+                rows="3"
+                required
+                value={enquiry}
+                onChange={(e) => setEnquiry(e.target.value)}
+                placeholder="Please type your enquiry"
+              ></textarea>
+            </div>
+            <div className="btn-container">
+              <button type="submit" className="button-primary-form">
+                Submit
+              </button>
+            </div>
+          </form>
+        </section>
+        <section className="contact-map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4126.081761021525!2d7.715206033843513!3d48.06823365077311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479116d811b8255b%3A0x497aa1ecd4c99ddf!2sLa%20Speranza!5e0!3m2!1sen!2suk!4v1640799792587!5m2!1sen!2suk"
+            title="Zulhal Makeup Salon"
+            // height="250"
+            // width="100"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            className="map-frame"
+          ></iframe>
+        </section>
       </section>
     </>
   );
