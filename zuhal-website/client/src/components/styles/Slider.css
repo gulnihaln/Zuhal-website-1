@@ -1,54 +1,46 @@
-.my-radio {
-  background-color: none;
-  border: 1px solid #5f393f3f;
+@import "~react-image-gallery/styles/css/image-gallery.css";
+.image-gallery-bullets .image-gallery-bullets-container {
+  display: flex;
+  justify-content: center;
+}
+.image-gallery-bullets .image-gallery-bullet {
+  border: 1px solid #5f393f;
   border-radius: 50px;
+  box-shadow: none;
   cursor: pointer;
   height: 4px;
   margin: 2px;
+  padding: 0;
   transition: all 1s ease;
   width: 18px;
-  z-index: 1;
 }
-.my-radio.checked {
-  background-color: #5f393f81;
+.image-gallery-bullets .image-gallery-bullet.active {
+  background: #5f393f;
+  outline: none;
+  border: none;
 }
-
-.slider-btn-container {
-  display: flex;
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-/* Slider images styles */
-.slider-img-container {
-  display: grid;
-  align-items: start;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 10px;
-  justify-items: center;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-}
-.slider-img-container img {
-  grid-column: 1/2;
-  grid-row: 1/3;
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: 500px;
   height: 500px;
+}
+.image-gallery-slide .image-gallery-image {
   object-fit: cover;
-  width: 100%;
 }
 
-.slide-enter {
-  opacity: 0.2;
-  transform: translateX(100%);
+.image-gallery-icon {
+  color: #5f393f52;
+  filter: none;
+  transition: all 0.5s ease;
 }
-.slide-enter-active {
-  opacity: 1;
-  transform: translateX(0%);
-  transition: all 2s ease-out;
+.image-gallery-icon:hover {
+  color: #5f393f;
 }
-
-.slide-exit-active {
-  opacity: 0.2;
-  transform: translateX(-100%);
-  transition: all 2s ease-out;
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-icon:hover .image-gallery-svg {
+  transform: scale(1);
+}
+.image-gallery-right-nav .image-gallery-svg,
+.image-gallery-left-nav .image-gallery-svg {
+  height: 100px;
+  width: 50px;
 }
