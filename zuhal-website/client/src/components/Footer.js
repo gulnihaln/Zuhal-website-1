@@ -26,6 +26,8 @@ export default function Footer() {
           </li>
         </ul>
       </section>
+      <div className="footer-horizontal-line">
+      </div>
       <section className="social-icon-container">
         <a href="">
           <BsFacebook className="social-icon" />

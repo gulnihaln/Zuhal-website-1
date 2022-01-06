@@ -1,14 +1,17 @@
 .loyalty-gift-cards {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 60px;
 }
 .loyalty-card-container {
   display: grid;
   grid-template-columns: 1fr;
 }
 .gift-card-container {
-  display: grid;
-  grid-template-columns: 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  display: flex;
+  flex-direction: column-reverse;
 }
 .loyalty-card-p,
 .gift-card-p {
@@ -21,33 +24,23 @@
   justify-content: center;
   align-items: center;
 }
-/* .button-primary {
-
-} */
-
+.loyalty-card-img, .gift-card-img {
+  width: 100%;
+}
 @media screen and (min-width: 480px) {
 }
 @media screen and (min-width: 768px) {
  .loyalty-card-container {
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    justify-items: stretch;
  }
  .gift-card-container {
-     grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
  }
 }
 @media screen and (min-width: 992px) {
 }
 @media screen and (min-width: 1200px) {
-  /* .loyalty-gift-cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-  .gift-card-container {
-      flex-direction: column-reverse;
-  }
-  .gift-card-container button {
-      order: -1;
-  } */
-
 }
