@@ -1,3 +1,9 @@
+.header-image img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: #0000001f 0px 5px 15px;
+}
 .faq-menu-container {
   background-color: var(--lightgrey);
   display: grid;
