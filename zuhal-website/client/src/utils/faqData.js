@@ -103,3 +103,27 @@ export const contact = [
       "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
   },
 ];
+
+export const other = [
+  {
+    question:
+      "Other Questions will be !!!here !!!Do I have to wear face coverings during the COVID-19 pandemic?",
+    answer:
+      "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
+  },
+  {
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
+    answer:
+      "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
+  },
+  {
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
+    answer:
+      "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
+  },
+  {
+    question: "Do I have to wear face coverings during the COVID-19 pandemic?",
+    answer:
+      "Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
+  },
+];
