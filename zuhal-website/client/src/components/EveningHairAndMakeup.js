@@ -1,8 +1,7 @@
 import Slider from "./Slider";
 import "./styles/EveningHairAndMakeup.css";
-import { eveningMakeUp } from "../utils/faqData";
+import { specialOccasion } from "../utils/faqData";
 import FaqSection from "./FaqSection";
-
 
 export default function EveningHairAndMakeup() {
   const images = [
@@ -20,9 +19,9 @@ export default function EveningHairAndMakeup() {
   return (
     <>
       <Slider images={images} />
-      <section className="evening-middle-container">
+      <section className="occasion-middle-container">
         <img
-          className="evening-middle-img"
+          className="occasion-middle-img"
           src="https://via.placeholder.com/650x350.png"
           alt=""
         ></img>
@@ -37,7 +36,7 @@ export default function EveningHairAndMakeup() {
       <section className="faq-section">
         <article>
           <h2>
-            <span>EVENING MAKEUP</span> FAQ
+            <span>SPECIAL OCCASION</span> FAQ
           </h2>
           <p className="faq-section-paragraph">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sed
@@ -46,7 +45,7 @@ export default function EveningHairAndMakeup() {
           </p>
         </article>
         <ul>
-          {eveningMakeUp.map((question) => (
+          {specialOccasion.map((question) => (
             <FaqSection question={question} />
           ))}
         </ul>
