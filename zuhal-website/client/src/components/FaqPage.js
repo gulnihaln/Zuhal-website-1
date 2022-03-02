@@ -1,89 +1,57 @@
 import React, { useState, useEffect } from "react";
-import Slider from "./Slider";
 import FaqSection from "./FaqSection";
 import "./styles/FaqPage.css";
+import "./styles/Lessons.css";
+import { Link } from "react-router-dom";
 import {
   covid,
   bridal,
   dayMakeUp,
   eveningMakeUp,
   contact,
+  other,
 } from "../utils/faqData";
 export default function FaqPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const images = [
-    {
-      src: "https://i2.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/04/MG_8459dsdfddd.jpg?fit=1920%2C1362&ssl=1",
-      alt: "a woman inside the pink curtain ",
-    },
-    {
-      src: "https://i0.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/04/3.jpg?fit=1920%2C2485&ssl=1",
-      alt: "a woman with flower",
-    },
-    {
-      src: "https://i1.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/04/MG_7312ds.jpg?fit=1920%2C2707&ssl=1",
-      alt: "woman with colored eyebrows",
-    },
-  ];
   const [questionsData, setQuestionsData] = useState(covid);
   const [questionsHeading, setQuestionsHeading] = useState("Covid-19");
 
+  function AsideMenuItem({ itemName, faqData }) {
+    return (
+      <h4
+        className={questionsHeading === itemName ? "active" : ""}
+        onClick={() => {
+          setQuestionsData(faqData);
+          setQuestionsHeading(itemName);
+        }}
+      >
+        {itemName}
+      </h4>
+    );
+  }
   return (
     <>
-      <Slider images={images} />
+      <section className="lessons-container">
+        <article className="lessons-article">
+          <h1 className="faq">Frequently Asked Questions</h1>
+          <p>
+            Got a question? Find our FAQs here. If your question hasn't been
+            asnwered here, drop us a line or use our{" "}
+            <Link to={"/contact"}>contact form.</Link>
+          </p>
+        </article>
+        <div className="lessons-image faq"></div>
+      </section>
+
       <section className="faq-menu-container">
         <article className="faq-menu">
-          <h4
-            className={questionsHeading === "Covid-19" ? "active" : ""}
-            onClick={() => {
-              setQuestionsData(covid);
-              setQuestionsHeading("Covid-19");
-            }}
-          >
-            Covid-19
-          </h4>
-          <h4
-            className={
-              questionsHeading === "Bridal Hair & Makeup" ? "active" : ""
-            }
-            onClick={() => {
-              setQuestionsData(bridal);
-              setQuestionsHeading("Bridal Hair & Makeup");
-            }}
-          >
-            Bridal
-          </h4>
-          <h4
-            className={questionsHeading === "Day Hair & Makeup" ? "active" : ""}
-            onClick={() => {
-              setQuestionsData(dayMakeUp);
-              setQuestionsHeading("Day Hair & Makeup");
-            }}
-          >
-            Day Hair & Makeup
-          </h4>
-          <h4
-            className={
-              questionsHeading === "Evening Hair & Makeup" ? "active" : ""
-            }
-            onClick={() => {
-              setQuestionsData(eveningMakeUp);
-              setQuestionsHeading("Evening Hair & Makeup");
-            }}
-          >
-            Evening H.& Makeup
-          </h4>
-          <h4
-            className={questionsHeading === "Contact" ? "active" : ""}
-            onClick={() => {
-              setQuestionsData(contact);
-              setQuestionsHeading("Contact");
-            }}
-          >
-            Contact
-          </h4>
+          <AsideMenuItem itemName={"Covid-19"} faqData={covid} />
+          <AsideMenuItem itemName={"Bridal Hair & Makeup"} faqData={bridal} />
+          <AsideMenuItem itemName={"Day Hair & Makeup"} faqData={dayMakeUp} />
+          <AsideMenuItem itemName={"Contact"} faqData={contact} />
+          <AsideMenuItem itemName={"Other"} faqData={other} />
         </article>
         <article className="faq-menu-items">
           <h3>{questionsHeading}</h3>

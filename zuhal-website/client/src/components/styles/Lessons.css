@@ -18,6 +18,9 @@
   width: 100%;
   grid-area: image;
 }
+.lessons-image.faq {
+  background-image: url("https://i0.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/04/3.jpg?fit=1920%2C2485&ssl=1");
+}
 .lessons-article {
   display: grid;
   align-items: center;
@@ -25,14 +28,18 @@
   justify-items: center;
   font-family: "Montserrat", sans-serif;
   grid-area: article;
-  padding: 2rem;
 }
 .lessons-article h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
+  color: var(--chocolate);
+  font-size: 2.5rem;
   letter-spacing: 1rem;
+  text-transform: uppercase;
   text-align: center;
   font-weight: 600;
+}
+.lessons-article h1.faq {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
 }
 .lessons-article span {
   display: block;
@@ -43,8 +50,15 @@
 .lessons-article p {
   color: var(--chocolate);
   text-align: justify;
+  padding: 0 10px;
 }
 @media screen and (min-width: 480px) {
+  .lessons-article h1 {
+    font-size: 3rem;
+  }
+  .lessons-article h1.faq {
+    font-size: 2.4rem;
+  }
   .lessons-image {
     height: 400px;
   }
@@ -69,6 +83,9 @@
     justify-self: start;
   }
 
+  .lessons-article {
+    width: 100%;
+  }
   .lessons-image {
     height: 100%;
   }
