@@ -95,7 +95,7 @@ export default function Contact() {
                 <h1>{successMsg}</h1>
               </div>
             )}
-            <label htmlFor="name">Your Name</label>
+            <label htmlFor="name">Your Name:</label>
             <input
               type="text"
               className="form-control"
