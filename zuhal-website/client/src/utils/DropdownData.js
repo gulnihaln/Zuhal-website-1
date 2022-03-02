@@ -8,8 +8,8 @@ export const dropdown = [
     to: "/dayhairandmakeup",
   },
   {
-    title: "Evening Hair & Makeup",
-    to: "/eveninghairandmakeup",
+    title: "Special Occasions",
+    to: "/specialoccasions",
   },
   {
     title: "Brow Threading & Tinting",
