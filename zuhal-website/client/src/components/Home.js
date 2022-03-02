@@ -5,7 +5,7 @@ import Wedding from "./Wedding";
 import Footer from "./Footer";
 import Main from "./Main";
 import AboutMe from "./AboutMe";
-import EveningHairAndMakeup from "./EveningHairAndMakeup";
+import SpecialOccasions from "./SpecialOccasions";
 import DayHairAndMakeup from "./DayHairAndMakeup.js";
 import LoyaltyAndGiftCard from "./LoyaltyAndGiftCard.js";
 import Lessons from "./Lessons.js";
@@ -24,10 +24,7 @@ export default function Home() {
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/bridal" element={<Wedding />} />
           <Route path="/dayhairandmakeup" element={<DayHairAndMakeup />} />
-          <Route
-            path="/eveninghairandmakeup"
-            element={<EveningHairAndMakeup />}
-          />
+          <Route path="/specialoccasions" element={<SpecialOccasions />} />
           <Route
             path="/browthreadingandtinting"
             element={<BrowThreadingAndTinting />}
