@@ -1,9 +1,9 @@
 import Slider from "./Slider";
-import "./styles/EveningHairAndMakeup.css";
+import "./styles/SpecialOccasions.css";
 import { specialOccasion } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 
-export default function EveningHairAndMakeup() {
+export default function SpecialOccasions() {
   const images = [
     {
       src: "https://i2.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/04/MG_8459dsdfddd.jpg?fit=1920%2C1362&ssl=1",
