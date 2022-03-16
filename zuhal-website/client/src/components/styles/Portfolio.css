@@ -55,9 +55,8 @@
 }
 
 .portfolio-gallery {
-  grid-area: 1 / -1;
-  display: grid;
-  place-content: center;
+  /* display: block; */
+  /* place-content: center; */
   height: 100%;
   width: 100%;
   color: #fff;
@@ -65,21 +64,16 @@
   background: rgba(0, 0, 0, 0.75);
 }
 
-.my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
+.portfolio-gallery > header {
   display: flex;
-  margin-left: -30px; /* gutter size offset */
-  width: auto;
-}
-.my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
-  background-clip: padding-box;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3rem;
+  margin-bottom: 0.3rem;
 }
 
-/* Style your items */
-.my-masonry-grid_column > div {
-  /* change div to reference your elements you put in <Masonry> */
-  background: grey;
-  margin-bottom: 30px;
+.portfolio-gallery > header > button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
 }
