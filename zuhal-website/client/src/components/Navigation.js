@@ -1,61 +1,57 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
-import { BsFillCaretDownFill } from "react-icons/bs";
-import { dropdown } from "../utils/DropdownData";
-import { GiHamburgerMenu } from "react-icons/gi";
+// import { CgChevronDown } from "react-icons/cg";
+// import { dropdown } from "../utils/DropdownData";
 import TopNav from "./TopNav";
-
 import "./styles/Navigation.css";
+import BurgerMenu from "./BurgerMenu";
 
 export default function Navigation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [sidebar, setSidebar] = useState(false);
+  // const [sidebar, setSidebar] = useState(false);
   let { pathname } = useLocation();
   console.log(pathname);
 
   const openDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
-  const closeDropdown = () => {
-    setDropdownOpen(false);
-  };
-  const openSidebar = () => {
-    setSidebar(!sidebar);
-  };
+  // const closeDropdown = () => {
+  //   setDropdownOpen(false);
+  // };
+  // const openSidebar = () => {
+  //   setSidebar(!sidebar);
+  // };
 
   return (
     <>
       <section className="allnav">
         <TopNav />
-        <div className="hamburger-menu">
-          <GiHamburgerMenu
+        {/* <div className="hamburger-menu">
+          {/* <GiHamburgerMenu
             style={{ cursor: "pointer" }}
             size={40}
             onClick={() => {
               openSidebar();
             }}
-          />
-        </div>
-        <nav className={sidebar ? "navbar" : "navbar active"}>
-          <Link to="#" className="logo-img">
+          /> */}
+        {/* </div> */}
+        <nav className="navbar">
+          <Link to="/" className="logo-img">
             <img
               className="logo"
               src="http://localhost:5000/uploads/logo/logo.jpg"
               alt="logo"
             />
           </Link>
-          <Link to="/">
-            <FaHome style={{ margin: "0 5 3 0" }} />
-            Home
-          </Link>
+          <BurgerMenu openDropdown={openDropdown} dropdownOpen={dropdownOpen} />
+          {/* <Link to="/">Home</Link>
           <Link to="/aboutme">About Me</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/portfolio">Portfolio</Link>
           <div className="dropdown">
             <button onClick={openDropdown} className="dropbtn">
               Services
-              <BsFillCaretDownFill />
+              <CgChevronDown />
             </button>
 
             {dropdownOpen === true && (
@@ -78,7 +74,7 @@ export default function Navigation() {
                 })}
               </div>
             )}
-          </div>
+          </div> */}
         </nav>
       </section>
     </>
