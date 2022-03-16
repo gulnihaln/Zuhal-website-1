@@ -11,7 +11,7 @@ export default function PortfolioGallery({ category, setCategory }) {
         <button onClick={() => setCategory(null)}>x</button>
       </header>
       <ResponsiveMasonry columnsCountBreakPoints={columnsCountBreakPoints}>
-        <Masonry gutter={4}>
+        <Masonry gutter={20}>
           {categoryImages.map((image) => (
             <img style={{ width: "100%" }} alt={image.alt} src={image.src} />
           ))}
