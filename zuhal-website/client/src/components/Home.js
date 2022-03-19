@@ -13,6 +13,7 @@ import BrowThreadingAndTinting from "./BrowThreadingAndTinting.js";
 import Portfolio from "./Portfolio.js";
 import FaqPage from "./FaqPage";
 import "./styles/Main.css";
+import PageNotFound from "./PageNotFound";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>
       <Footer />
