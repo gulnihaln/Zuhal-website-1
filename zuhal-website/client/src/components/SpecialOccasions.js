@@ -22,7 +22,7 @@ export default function SpecialOccasions() {
       <section className="occasion-middle-container">
         <img
           className="occasion-middle-img"
-          src="https://via.placeholder.com/650x350.png"
+          src="http://localhost:5000/uploads/specialoccasions/image4.jpg"
           alt=""
         ></img>
         <p className="p-middle">
