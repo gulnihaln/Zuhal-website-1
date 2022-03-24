@@ -7,7 +7,7 @@ export default function DayHairAndMakeup() {
         <article className="intro-container">
           <img
             className="intro-img"
-            src="https://via.placeholder.com/840x350.png"
+            src="http://localhost:5000/uploads/commercial/day1.jpg"
             alt="xxxx"
           />
           <p className="p-intro">
@@ -30,14 +30,14 @@ export default function DayHairAndMakeup() {
           </article>
           <img
             className="middle-img"
-            src="https://via.placeholder.com/600x900.png"
+            src="http://localhost:5000/uploads/commercial/image1.jpg"
             alt="xxxx"
           />
         </article>
         <article className="final-container">
           <img
             className="final-img"
-            src="https://via.placeholder.com/840x350.png"
+            src="http://localhost:5000/uploads/commercial/image2.jpg"
             alt="xxxx"
           />
           <p className="p-final">
