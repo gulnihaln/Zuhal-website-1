@@ -16,13 +16,19 @@ export default function Wedding() {
       <section>
         <Slider images={images} />
       </section>
+      <h2 className="bridal-title">
+        Bridal Hair & Makeup to make you look and feel amazing on your big Day
+      </h2>
       <section className="bridal-article-container">
+        <p>
+          Congratulations on planning your wedding day! This is one of the most
+          important days of your life so your hair and makeup should be planned
+          without any compromise. You need an experienced Artist who gets to
+          know you, your personality and your style. Someone who will care to
+          bring the best in your look and makeup to make you look and feel
+          stunning.
+        </p>
         <article className="bridal-article">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
-            excepturi. Eveniet tempora neque ratione assumenda consequatur autem
-            sunt ipsam veniam!
-          </p>
           <img
             src="http://localhost:5000/uploads/bridal/bridal1.jpg"
             alt="placeholder"
@@ -33,12 +39,12 @@ export default function Wedding() {
             src="http://localhost:5000/uploads/bridal/bridal2.jpg"
             alt="placeholder"
           />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut,
-            excepturi. Eveniet tempora neque ratione assumenda consequatur autem
-            sunt ipsam veniam!
-          </p>
         </article>
+        <p>
+          Zuhal’s bridal hair and makeup services will help you feel confident
+          and beautiful through out your wedding day so you can look back at
+          your photos and remember how amazing you felt.
+        </p>
       </section>
       <section className="faq-section">
         <article>

@@ -2,14 +2,34 @@
 .bridal-article {
   display: grid;
   justify-items: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
-.bridal-article p {
+p {
   padding: 1rem;
-  max-width: 400px;
+  max-width: 80%;
+  color: var(--chocolate);
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 24px;
+}
+.bridal-article img {
+  width: 100%;
 }
 
+.bridal-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Parisienne", cursive;
+  color: var(--chocolate);
+  font-size: 48px;
+  margin: 40px auto;
+  max-width: 60%;
+  
+}
 @media screen and (min-width: 992px) {
   .bridal-article {
     display: grid;
