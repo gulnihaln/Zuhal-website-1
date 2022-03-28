@@ -2,14 +2,14 @@ const images = [
   {
     id: "0",
     title: "Bridal",
-    src: "https://via.placeholder.com/600x350.png",
-    alt: "bridal",
+    src: "localhost:5000/uploads/bridal/bridal1.jpg",
+    alt: "bridal1",
     category: "Bridal",
   },
   {
     id: "1",
     title: "Bridal",
-    src: "https://via.placeholder.com/600x351.png",
+    src: "localhost:5000/uploads/bridal/bridal2.jpg",
     alt: "bridal",
     category: "Bridal",
   },
@@ -53,7 +53,7 @@ const images = [
     title: "Commercial",
     src: "https://via.placeholder.com/600x357.png",
     alt: "commercial",
-    category: "Commercial"
+    category: "Commercial",
   },
 ];
 
