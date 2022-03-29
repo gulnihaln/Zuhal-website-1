@@ -13,7 +13,12 @@ export default function PortfolioGallery({ category, setCategory }) {
       <ResponsiveMasonry columnsCountBreakPoints={columnsCountBreakPoints}>
         <Masonry gutter={20}>
           {categoryImages.map((image) => (
-            <img style={{ width: "100%" }} alt={image.alt} src={image.src} />
+            <img
+              key={`${image.title} - ${image.id}`}
+              style={{ width: "100%" }}
+              alt={image.alt}
+              src={image.src}
+            />
           ))}
         </Masonry>
       </ResponsiveMasonry>
