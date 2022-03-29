@@ -14,7 +14,7 @@
 
 .portfolio-categories {
   grid-gap: 0.5rem;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-auto-rows: 600px;
 }
 
@@ -55,8 +55,7 @@
 }
 
 .portfolio-gallery {
-  /* display: block; */
-  /* place-content: center; */
+  display: block;
   height: 100%;
   width: 100%;
   color: #fff;
