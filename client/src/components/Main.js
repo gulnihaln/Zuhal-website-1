@@ -1,22 +1,14 @@
-import Slider from "./Slider";
 import { useEffect } from "react";
 import "./styles/PrimaryButton.css";
-import ImgTag, { specialOccasions } from "./ImgTag";
+import ImgTag from "./ImgTag";
 import HeroImage from "./HeroImage";
 
 export default function Main() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-	const images = [
-		{ src: `${specialOccasions["image1.jpg"].default}`, alt: "image1" },
-		{ src: `${specialOccasions["image2.jpg"].default}`, alt: "image2" },
-		{ src: `${specialOccasions["image3.jpg"].default}`, alt: "image3" },
-	];
-
 	return (
 		<>
-			{/* <Slider images={images} /> */}
 			<HeroImage
 				category="bridal"
 				imgLink="biridalHero.jpeg"
