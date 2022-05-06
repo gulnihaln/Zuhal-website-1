@@ -1,16 +1,8 @@
-import Slider from "./Slider";
 import "./styles/SpecialOccasions.css";
 import { specialOccasion } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 import ImgTag, { specialOccasions } from "./ImgTag";
-import HeroImage from "./HeroImage";
 export default function SpecialOccasions() {
-	const images = [
-		{ src: `${specialOccasions["image1.jpg"].default}`, alt: "image1" },
-		{ src: `${specialOccasions["image2.jpg"].default}`, alt: "image2" },
-		{ src: `${specialOccasions["image3.jpg"].default}`, alt: "image3" },
-	];
-
 	return (
 		<>
 			<picture className="d">
@@ -18,10 +10,6 @@ export default function SpecialOccasions() {
 					media="(min-width:500px)"
 					srcset={`${specialOccasions["image3.jpg"].default}`}
 				/>
-				{/* <source
-					media="(min-width:465px)"
-					srcset={`${specialOccasions["image2.jpg"].default}`}
-				/> */}
 				<img
 					className="hero-image special-occasions-hero"
 					src={`${specialOccasions["image5.jpg"].default}`}
