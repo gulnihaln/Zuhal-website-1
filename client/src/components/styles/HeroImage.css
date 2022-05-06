@@ -1,0 +1,14 @@
+/* Hero general styles */
+.hero-image-container{
+}
+.hero-image{
+  height: 500px;
+  object-fit: cover;
+  object-position: center 25%;
+  width: 100%;
+}
+
+/* Main page Hero  styles */
+.hero-image.main-page-hero{
+  object-position: 35% 25%;
+}
