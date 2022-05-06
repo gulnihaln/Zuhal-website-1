@@ -1,16 +1,9 @@
-import Slider from "./Slider";
 import { bridal as bridalFaq } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 import "./styles/Bridal.css";
-import ImgTag, { bridal as bridalImages } from "./ImgTag";
+import ImgTag from "./ImgTag";
 import HeroImage from "./HeroImage";
 export default function Wedding() {
-	const images = [
-		{ src: `${bridalImages["bridal4.jpg"].default}`, category: "bridal" },
-		{ src: `${bridalImages["bridal5.jpg"].default}`, category: "bridal" },
-		{ src: `${bridalImages["bridal6.jpg"].default}`, category: "bridal" },
-	];
-
 	return (
 		<>
 			<HeroImage
