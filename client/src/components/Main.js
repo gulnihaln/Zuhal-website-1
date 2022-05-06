@@ -2,6 +2,7 @@ import Slider from "./Slider";
 import { useEffect } from "react";
 import "./styles/PrimaryButton.css";
 import ImgTag, { specialOccasions } from "./ImgTag";
+import HeroImage from "./HeroImage";
 
 export default function Main() {
 	useEffect(() => {
@@ -15,7 +16,12 @@ export default function Main() {
 
 	return (
 		<>
-			<Slider images={images} />
+			{/* <Slider images={images} /> */}
+			<HeroImage
+				category="bridal"
+				imgLink="biridalHero.jpeg"
+				className="main-page-hero"
+			/>
 			<section className="section-intro">
 				<h2>Lorem ipsum dolor sit amet.</h2>
 				<p>
