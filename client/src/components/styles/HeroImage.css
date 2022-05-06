@@ -3,6 +3,7 @@
 }
 .hero-image{
   height: 500px;
+  margin: 2rem 0;
   object-fit: cover;
   object-position: center 25%;
   width: 100%;
