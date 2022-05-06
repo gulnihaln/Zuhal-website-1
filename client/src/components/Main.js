@@ -11,7 +11,7 @@ export default function Main() {
 		<>
 			<HeroImage
 				category="bridal"
-				imgLink="biridalHero.jpeg"
+				imgLink="bridalHero.jpeg"
 				className="main-page-hero"
 			/>
 			<section className="section-intro">
