@@ -3,7 +3,7 @@ import { bridal as bridalFaq } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 import "./styles/Bridal.css";
 import ImgTag, { bridal as bridalImages } from "./ImgTag";
-
+import HeroImage from "./HeroImage";
 export default function Wedding() {
 	const images = [
 		{ src: `${bridalImages["bridal4.jpg"].default}`, category: "bridal" },
@@ -13,9 +13,12 @@ export default function Wedding() {
 
 	return (
 		<>
-			<section>
-				<Slider images={images} />
-			</section>
+			<HeroImage
+				category="bridal"
+				imgLink="bridal7.jpg"
+				className="bridal-page-hero"
+			/>
+
 			<h2 className="bridal-title">
 				Bridal Hair & Makeup to make you look and feel amazing on your big Day
 			</h2>
