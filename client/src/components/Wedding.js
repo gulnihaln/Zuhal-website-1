@@ -1,17 +1,21 @@
 import { bridal as bridalFaq } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 import "./styles/Bridal.css";
-import ImgTag from "./ImgTag";
-import HeroImage from "./HeroImage";
+import ImgTag, { bridal } from "./ImgTag";
 export default function Wedding() {
 	return (
 		<>
-			<HeroImage
-				category="bridal"
-				imgLink="bridal7.jpg"
-				className="bridal-page-hero"
-			/>
-
+			<picture className="d">
+				<source
+					media="(min-width:720px)"
+					srcset={`${bridal["bridal7.jpg"].default}`}
+				/>
+				<img
+					className="hero-image bridal-page-hero"
+					src={`${bridal["bridal4.jpg"].default}`}
+					alt="Flowers"
+				/>
+			</picture>
 			<h2 className="bridal-title">
 				Bridal Hair & Makeup to make you look and feel amazing on your big Day
 			</h2>
