@@ -43,8 +43,7 @@ li:hover{
   flex-flow: column-reverse nowrap;
   justify-content: space-around;
   height: auto;
-  transform:${({ openMenu }) =>
-    openMenu ? "translateX(0)" : "translateX(100%)"};
+  transform:${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   position: fixed;
   right: 0;
   top: 0;
@@ -63,64 +62,64 @@ li:hover{
 `;
 
 export default function RightNav({
-  onClickHandler,
-  openMenu,
-  dropdownOpen,
-  openDropdown,
+	onClickHandler,
+	open,
+	dropdownOpen,
+	openDropdown,
 }) {
-  return (
-    <Ul className="nav-links" openMenu={openMenu}>
-      <li>
-        <Link to="/" openMenu={openMenu} onClick={onClickHandler}>
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link to="/aboutMe" onClick={onClickHandler}>
-          About
-        </Link>
-      </li>
-      <li>
-        <Link to="/contact" onClick={onClickHandler}>
-          Contact
-        </Link>
-      </li>
-      <li>
-        <Link to="/portfolio" onClick={onClickHandler}>
-          Portfolio
-        </Link>
-      </li>
-      <li>
-        <div className="dropdown">
-          <button onClick={openDropdown} className="dropbtn">
-            Services
-            <CgChevronDown />
-          </button>
+	return (
+		<Ul className="nav-links" open={open}>
+			<li>
+				<Link to="/" open={open} onClick={onClickHandler}>
+					Home
+				</Link>
+			</li>
+			<li>
+				<Link to="/aboutMe" onClick={onClickHandler}>
+					About
+				</Link>
+			</li>
+			<li>
+				<Link to="/contact" onClick={onClickHandler}>
+					Contact
+				</Link>
+			</li>
+			<li>
+				<Link to="/portfolio" onClick={onClickHandler}>
+					Portfolio
+				</Link>
+			</li>
+			<li>
+				<div className="dropdown">
+					<button onClick={openDropdown} className="dropbtn">
+						Services
+						<CgChevronDown />
+					</button>
 
-          {dropdownOpen === true && (
-            <div
-              className="dropdown-content"
-              // style={{ position: "fixed", top: "0", right: "O" }}
-            >
-              {dropdown.map((data, index) => {
-                return (
-                  <li onClick={onClickHandler}>
-                    <Link
-                      onClick={(s) => {
-                        openDropdown();
-                      }}
-                      key={index}
-                      to={data.to}
-                    >
-                      {data.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      </li>
-    </Ul>
-  );
+					{dropdownOpen === true && (
+						<div
+							className="dropdown-content"
+							// style={{ position: "fixed", top: "0", right: "O" }}
+						>
+							{dropdown.map((data, index) => {
+								return (
+									<li key={index} onClick={onClickHandler}>
+										<Link
+											onClick={(s) => {
+												openDropdown();
+											}}
+											key={index}
+											to={data.to}
+										>
+											{data.title}
+										</Link>
+									</li>
+								);
+							})}
+						</div>
+					)}
+				</div>
+			</li>
+		</Ul>
+	);
 }
