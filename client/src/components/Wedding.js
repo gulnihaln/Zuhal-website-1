@@ -8,7 +8,7 @@ export default function Wedding() {
 			<picture className="d">
 				<source
 					media="(min-width:720px)"
-					srcset={`${bridal["bridal7.jpg"].default}`}
+					srcSet={`${bridal["bridal7.jpg"].default}`}
 				/>
 				<img
 					className="hero-image bridal-page-hero"

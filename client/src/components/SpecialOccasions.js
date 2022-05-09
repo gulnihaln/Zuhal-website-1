@@ -8,7 +8,7 @@ export default function SpecialOccasions() {
 			<picture className="d">
 				<source
 					media="(min-width:500px)"
-					srcset={`${specialOccasions["image3.jpg"].default}`}
+					srcSet={`${specialOccasions["image3.jpg"].default}`}
 				/>
 				<img
 					className="hero-image special-occasions-hero"
