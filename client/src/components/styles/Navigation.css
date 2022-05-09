@@ -25,24 +25,23 @@
   opacity: 0.8;
 }
 
+.dropbtn {
+ display: flex;
+ align-items: center;
+}
+
 @media screen and (min-width: 480px) {
-  /* top-nav styles */
+  
   .top-nav-container {
     display: flex;
   }
 }
-.logo {
-  height: 60px;
-  position: fixed;
-  top: 60px;
-  left: 0;
-  border-radius: 50px;
-}
+
 .logo-img {
-  height: 80px;
+  height: 60px;
   display: grid;
   align-items: center;
-}
+  }
 
 .hamburger-menu {
   display: flex;
@@ -55,9 +54,10 @@
   width: 100%;
   font-size: 16px;
   border: transparent;
-  border-radius: 10px;
+  border-radius: 15px;
   color: rgb(5, 5, 5);
-  /* padding: 14px 16px; */
+  padding: 14px 16px;
+
   transition: 0.5s ease-in;
 }
 
@@ -82,51 +82,23 @@
   width: 200px;
   position: absolute;
   height: 70vh;
-  top: 40px;
-  right: -18px;
+  top: 50px;
+  right: -10px;
   box-shadow: 0px 8px 16px 0px rgba(19, 11, 11, 0.2);
   border-radius: 10px;
   background-color: var(--chocolate);
   transition: 0.9s ease-in-out;
-}
+ }
 
-/* @media screen and (min-width: 830px) {
-   .hamburger-menu {
-    display: none;
-  } 
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    justify-items: center;
-    background-color: whitesmoke;
-    font-family: inherit;
-    width: 100%;
-    right: 0;
-    top: 0;
-    height: 70px;
-    position: sticky;
-  }
-  .navbar a {
-    color: rgb(44, 28, 28);
-    height: 50px;
-    transition: all 0.5s ease;
-    border-radius: 15px;
-  } */
 
 .dropbtn {
   background-color: transparent;
-}
-/* .dropdown-content a:hover {
-  text-transform: underline;
-} */
+  }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   background-color: var(--primary);
-  border-bottom: lightgrey solid 0.5px;
   background-color: transparent;
   height: 70px;
 }
@@ -172,12 +144,17 @@
     justify-content: space-around;
     height: 2rem;
     width: 2rem;
-    /* position: fixed; */
     top: 15px;
     right: 50px;
     left: auto;
     right: 20px;
     cursor: pointer;
     z-index: 100;
+  }
+}
+@media screen and (min-width: 768px) {
+
+ .logo-img {
+  align-self:flex-start;
   }
 }

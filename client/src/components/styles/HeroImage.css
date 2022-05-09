@@ -1,9 +1,7 @@
 /* Hero general styles */
-.hero-image-container{
-}
 .hero-image{
   height: 500px;
-  margin: 2rem 0;
+  margin: 0rem 0 2rem 0;
   object-fit: cover;
   object-position: center 25%;
   width: 100%;
@@ -12,6 +10,7 @@
 /* Main page Hero  styles */
 .hero-image.main-page-hero{
   object-position: 35% 25%;
+  margin-top: 0px;
 }
 /* Bridal page Hero  styles */
 .hero-image.bridal-page-hero{
