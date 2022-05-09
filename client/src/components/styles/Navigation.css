@@ -55,10 +55,9 @@
   width: 100%;
   font-size: 16px;
   border: transparent;
-  border-radius: 15px;
+  border-radius: 10px;
   color: rgb(5, 5, 5);
-  padding: 14px 16px;
-
+  /* padding: 14px 16px; */
   transition: 0.5s ease-in;
 }
 
@@ -83,13 +82,12 @@
   width: 200px;
   position: absolute;
   height: 70vh;
-  top: 50px;
-  right: -10px;
+  top: 40px;
+  right: -18px;
   box-shadow: 0px 8px 16px 0px rgba(19, 11, 11, 0.2);
   border-radius: 10px;
-  background-color: rgb(151, 8, 8);
+  background-color: var(--chocolate);
   transition: 0.9s ease-in-out;
-  z-index: 11;
 }
 
 /* @media screen and (min-width: 830px) {
