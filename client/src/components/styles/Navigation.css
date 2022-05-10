@@ -81,13 +81,16 @@
   justify-content: space-around;
   width: 200px;
   position: absolute;
-  height: 70vh;
-  top: 50px;
-  right: -10px;
+  height: 50vh;
+  top: 60px;
+  right: -20px;
   box-shadow: 0px 8px 16px 0px rgba(19, 11, 11, 0.2);
   border-radius: 10px;
   background-color: var(--chocolate);
   transition: 0.9s ease-in-out;
+ }
+ .dropdown-content li a {
+   color: var(--white)
  }
 
 
@@ -122,19 +125,22 @@
     justify-content: space-evenly;
     top: 40px;
     left: auto;
-    right: -30px;
-    height: 80vh;
-    width: 200px;
+    right: -50px;
+    height: 78vh;
+    width: 60vw;
     padding-right: 10px;
-    background-color: rgb(80, 47, 122);
+    background-color: var(--white);
     border-radius: 5px;
-    z-index: 2000;
+    
+  }
+  .dropdown-content li a {
+    color: var(--white)
   }
   .dropdown .dropbtn {
     width: 100%;
     font-size: 16px;
     border-radius: 15px;
-    color: rgb(243, 239, 239);
+    color: var(--chocolate);
     padding: 14px 16px;
     transition: 0.5s ease-in;
   }
