@@ -32,7 +32,7 @@ export default function Main() {
 						whatever the occasion is.
 					</p>
 					<Link to={"/contact"}>
-						<button className="button-primary">Contact With Us</button>
+						<button className="button-primary">Contact Us</button>
 					</Link>
 				</article>
 				<ImgTag

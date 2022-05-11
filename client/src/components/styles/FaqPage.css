@@ -58,6 +58,9 @@
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 2rem;
   }
+  .faq-menu-items ul{
+    width: 80%;
+  }
   .faq-menu h4 {
     font-size: 1.25rem;
   }
