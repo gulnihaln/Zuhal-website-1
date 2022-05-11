@@ -47,15 +47,15 @@ li:hover{
   position: fixed;
   right: 0;
   top: 0;
-  width: 50vw;
+  width: 90vw;
   height: 100vh;
-  background-color:#26272b ;
+  background-color:var(--white);
   border-radius: 5px;
   padding-top: 3.5rem;
-  z-index: 3;
   transition: 0.35s ease-in-out;
+  z-index: 1;
   li a{
-	color:white;
+	color:var(--chocolate);
 }
 }
 
