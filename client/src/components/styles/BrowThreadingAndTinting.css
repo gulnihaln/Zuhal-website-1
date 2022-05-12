@@ -1,7 +1,6 @@
 .brow-container{
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 60px;
 }
 .section1-brow {
     display: grid;
@@ -11,13 +10,26 @@
 .section2-brow {
     display: flex;
     flex-direction: column-reverse;
-    
 
 }
 .section1-brow-p, .section2-brow-p {
     align-self: center;
     margin: 30px 10px 30px;
     text-align: center;
+}
+.editorial1-img,
+.editorial2-img {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.editorial1-img {
+    margin-top: 2rem;
+}
+
+.editorial2-img {
+    margin-bottom: 2rem;
 }
 .section1-brow-img, .section2-brow-img {
         width: 100%;
