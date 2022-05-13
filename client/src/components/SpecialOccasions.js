@@ -30,9 +30,9 @@ export default function SpecialOccasions() {
 				<article className="special-occasion-intro-article">
 					<h2>Be Special...</h2>
 					<p className="p-middle">
-						If you have a special occasion, such as a wedding, festival or just
-						because you <span>deserve it </span> , book your special occasion
-						makeup to showcase your beauty in a <span> unique way.</span>
+						Whether it is for a special occasion such as a wedding or festival,
+						or simply because you <span>deserve it </span> , we can present you
+						in a <span> unique way</span> to stand out from the crowd.
 					</p>
 				</article>
 			</section>
