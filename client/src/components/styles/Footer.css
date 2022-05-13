@@ -42,7 +42,7 @@ footer .social-icon {
 }
 .footer-logo {
   order: -1;
-  height: 50px;
+  height: 150px;
 }
 
 @media screen and (min-width: 480px) {
