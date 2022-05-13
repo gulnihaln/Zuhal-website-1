@@ -15,6 +15,12 @@
 .special-occasion-intro-article h2{
   font-family: "Parisienne", cursive;
 }
+.p-middle{
+  margin-bottom: 3rem;
+}
+.p-middle span{
+  font-weight: 600;
+}
 .special-occasion-image-1{
   height: 600px;
   object-fit: cover;
@@ -27,11 +33,17 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 2fr 1fr;
+    justify-items: center;
     margin-top: 2rem;
   }
   .occasion-middle-img {
     width: 100%;
   }
+  .special-occasion-image-1{
+    min-width: 470px;
+    width: 70%;
+  }
+
 }
 @media screen and (min-width: 992px) {
   .occasion-middle-container {
