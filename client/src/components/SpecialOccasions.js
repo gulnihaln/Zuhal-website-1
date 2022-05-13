@@ -16,6 +16,10 @@ export default function SpecialOccasions() {
 					alt="Flowers"
 				/>
 			</picture>
+			<section className="sectionQuote">
+				<p>Do not surround yourself with negativity, but rather with makeup.</p>
+				<p className="quoteAuthor">-Zuhal Makeup</p>
+			</section>
 			<section className="occasion-middle-container">
 				<ImgTag
 					category="specialOccasions"
@@ -27,8 +31,8 @@ export default function SpecialOccasions() {
 					<h2>Be Special...</h2>
 					<p className="p-middle">
 						If you have a special occasion, such as a wedding, festival or just
-						because you <span>DESERVE it </span> , book your special occasion
-						makeup to showcase your beauty in a unique way.
+						because you <span>deserve it </span> , book your special occasion
+						makeup to showcase your beauty in a <span> unique way.</span>
 					</p>
 				</article>
 			</section>
