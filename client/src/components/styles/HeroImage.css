@@ -7,18 +7,24 @@
   width: 100%;
 }
 
-/* Main page Hero  styles */
+/* Main page Hero styles */
 .hero-image.main-page-hero{
   object-position: 35% 25%;
+  margin-top: 0px;
+}
+/* Special Occasion page Hero styles */
+.hero-image.special-occasions-hero{
+  object-position: 0% 0%;
   margin-top: 0px;
 }
 /* Bridal page Hero  styles */
 .hero-image.bridal-page-hero{
   object-position: 35% 30%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 500px) {
   /* Special Occasions page Hero  styles */
   .hero-image.special-occasions-hero{
-    object-position: 35% 40%;
+    height: 570px;
+    object-position: 0% 24%;
   }
 }
