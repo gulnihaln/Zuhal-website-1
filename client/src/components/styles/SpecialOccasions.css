@@ -11,11 +11,9 @@
   justify-content: center;
   flex-direction: column;
   text-align: justify;
-
 }
-.p-middle {
-  /* margin: 30px 10px 30px; */
-  /* align-self: center; */
+.special-occasion-intro-article h2{
+  font-family: "Parisienne", cursive;
 }
 .special-occasion-image-1{
   height: 600px;
