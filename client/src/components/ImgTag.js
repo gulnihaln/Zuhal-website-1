@@ -8,6 +8,9 @@ function importAll(r) {
 	return images;
 }
 
+const about = importAll(
+	require.context("../uploads/about", false, /\.(png|jpe?g|svg)$/)
+);
 const bridal = importAll(
 	require.context("../uploads/bridal", false, /\.(png|jpe?g|svg)$/)
 );
@@ -36,6 +39,8 @@ export default function ImgTag({ category, imgLink, alt, className }) {
 		imgURL = general[imgLink].default;
 	} else if (category === "specialOccasions") {
 		imgURL = specialOccasions[imgLink].default;
+	} else if (category === "about") {
+		imgURL = about[imgLink].default;
 	}
 	return <img src={imgURL} alt={alt} className={className} />;
 }
