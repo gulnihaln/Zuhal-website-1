@@ -91,6 +91,9 @@
   .lessons-image {
     height: 100%;
   }
+  .lessons.lessons-image{
+    height: 95%;
+  }
 }
 @media screen and (min-width: 1200px) {
 }
