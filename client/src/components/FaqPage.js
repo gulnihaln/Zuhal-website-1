@@ -44,7 +44,7 @@ export default function FaqPage() {
 					<h1 className="faq">Frequently Asked Questions</h1>
 					<p>
 						Got a question? Find our FAQs here. If your question hasn't been
-						asnwered here, drop us a line or use our{" "}
+						answered here, drop us a line or use our{" "}
 						<Link to={"/contact"}>contact form.</Link>
 					</p>
 				</article>
