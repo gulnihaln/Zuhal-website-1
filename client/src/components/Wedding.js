@@ -2,6 +2,7 @@ import { bridal as bridalFaq } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 import "./styles/Bridal.css";
 import ImgTag, { bridal } from "./ImgTag";
+import { Link } from "react-router-dom";
 import { nanoid } from "nanoid";
 export default function Wedding() {
 	return (
@@ -48,9 +49,9 @@ export default function Wedding() {
 						<span>WEDDING MAKEUP</span> FAQ
 					</h2>
 					<p className="faq-section-paragraph">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sed
-						ipsam aspernatur minus eveniet, distinctio culpa pariatur quae
-						doloremque sapiente.
+						Got a question? Find our FAQs here. If your question hasn't been
+						answered here, drop us a line or use our{" "}
+						<Link to={"/contact"}>contact form.</Link>
 					</p>
 				</article>
 				<ul>
