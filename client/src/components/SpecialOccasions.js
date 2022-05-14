@@ -2,6 +2,7 @@ import "./styles/SpecialOccasions.css";
 import { specialOccasion } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 import ImgTag, { specialOccasions } from "./ImgTag";
+import { nanoid } from "nanoid";
 export default function SpecialOccasions() {
 	return (
 		<>
@@ -49,7 +50,7 @@ export default function SpecialOccasions() {
 				</article>
 				<ul>
 					{specialOccasion.map((question) => (
-						<FaqSection question={question} />
+						<FaqSection key={nanoid(5)} question={question} />
 					))}
 				</ul>
 			</section>

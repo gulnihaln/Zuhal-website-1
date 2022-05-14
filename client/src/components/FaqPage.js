@@ -3,6 +3,7 @@ import FaqSection from "./FaqSection";
 import "./styles/FaqPage.css";
 import "./styles/Lessons.css";
 import { Link } from "react-router-dom";
+import { nanoid } from "nanoid";
 import {
 	generalFaq,
 	bridal,
@@ -66,8 +67,8 @@ export default function FaqPage() {
 				<article className="faq-menu-items">
 					<h3>{questionsHeading}</h3>
 					<ul>
-						{questionsData.map((question, index) => (
-							<FaqSection key={index} question={question} />
+						{questionsData.map((question) => (
+							<FaqSection key={nanoid(5)} question={question} />
 						))}
 					</ul>
 				</article>

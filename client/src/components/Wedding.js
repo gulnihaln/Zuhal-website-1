@@ -2,6 +2,7 @@ import { bridal as bridalFaq } from "../utils/faqData";
 import FaqSection from "./FaqSection";
 import "./styles/Bridal.css";
 import ImgTag, { bridal } from "./ImgTag";
+import { nanoid } from "nanoid";
 export default function Wedding() {
 	return (
 		<>
@@ -54,7 +55,7 @@ export default function Wedding() {
 				</article>
 				<ul>
 					{bridalFaq.map((question) => (
-						<FaqSection question={question} />
+						<FaqSection key={nanoid(5)} question={question} />
 					))}
 				</ul>
 			</section>
