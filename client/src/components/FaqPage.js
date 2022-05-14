@@ -7,7 +7,6 @@ import {
 	generalFaq,
 	bridal,
 	dayMakeUp,
-	eveningMakeUp,
 	contact,
 	other,
 } from "../utils/faqData";
