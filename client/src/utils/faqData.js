@@ -98,30 +98,31 @@ export const contact = [
 	},
 	{
 		question: "What are your working hours and days?",
-		answer: "Monday to Friday, 8 am to 8 pm. Saturday, 9 am to 5 pm",
+		answer:
+			"Tuesday to Saturday, 9 am to 7 pm. We can adjust the time to meet your requirements on your special day!!!",
 	},
 ];
 
-export const other = [
-	{
-		question:
-			"Other Questions will be !!!here !!!Do I have to wear face coverings during the COVID-19 pandemic?",
-		answer:
-			"Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
-	},
-	{
-		question: "Do I have to wear face coverings during the COVID-19 pandemic?",
-		answer:
-			"Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
-	},
-	{
-		question: "Do I have to wear face coverings during the COVID-19 pandemic?",
-		answer:
-			"Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
-	},
-	{
-		question: "Do I have to wear face coverings during the COVID-19 pandemic?",
-		answer:
-			"Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
-	},
-];
+// export const other = [
+// 	{
+// 		question:
+// 			"Other Questions will be !!!here !!!Do I have to wear face coverings during the COVID-19 pandemic?",
+// 		answer:
+// 			"Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
+// 	},
+// 	{
+// 		question: "Do I have to wear face coverings during the COVID-19 pandemic?",
+// 		answer:
+// 			"Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
+// 	},
+// 	{
+// 		question: "Do I have to wear face coverings during the COVID-19 pandemic?",
+// 		answer:
+// 			"Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
+// 	},
+// 	{
+// 		question: "Do I have to wear face coverings during the COVID-19 pandemic?",
+// 		answer:
+// 			"Staff and customers must wear a face covering in shops and in premises that provide close contact services.",
+// 	},
+// ];

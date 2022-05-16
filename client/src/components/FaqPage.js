@@ -4,13 +4,7 @@ import "./styles/FaqPage.css";
 import "./styles/Lessons.css";
 import { Link } from "react-router-dom";
 import { nanoid } from "nanoid";
-import {
-	generalFaq,
-	bridal,
-	dayMakeUp,
-	contact,
-	other,
-} from "../utils/faqData";
+import { generalFaq, bridal, dayMakeUp, contact } from "../utils/faqData";
 import { commercial, general } from "./ImgTag";
 export default function FaqPage() {
 	useEffect(() => {
@@ -62,7 +56,7 @@ export default function FaqPage() {
 					<AsideMenuItem itemName={"Bridal Hair & Makeup"} faqData={bridal} />
 					<AsideMenuItem itemName={"Day Hair & Makeup"} faqData={dayMakeUp} />
 					<AsideMenuItem itemName={"Contact"} faqData={contact} />
-					<AsideMenuItem itemName={"Other"} faqData={other} />
+					{/* <AsideMenuItem itemName={"Other"} faqData={other} /> */}
 				</article>
 				<article className="faq-menu-items">
 					<h3>{questionsHeading}</h3>
