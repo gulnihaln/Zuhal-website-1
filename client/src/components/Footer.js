@@ -35,10 +35,10 @@ export default function Footer() {
 			</section>
 			<div className="footer-horizontal-line"></div>
 			<section className="social-icon-container">
-				<a href="">
+				<a href="https://m.facebook.com/zuhalmakeupartist/" target={"_blank"}>
 					<BsFacebook className="social-icon" />
 				</a>
-				<a href="">
+				<a href="https://www.instagram.com/callmezuhall/" target={"_blank"}>
 					<BsInstagram className="social-icon" />
 				</a>
 				<a href="">
