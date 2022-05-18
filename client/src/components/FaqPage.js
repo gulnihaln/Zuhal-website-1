@@ -3,14 +3,8 @@ import FaqSection from "./FaqSection";
 import "./styles/FaqPage.css";
 import "./styles/Lessons.css";
 import { Link } from "react-router-dom";
-import {
-	generalFaq,
-	bridal,
-	dayMakeUp,
-	eveningMakeUp,
-	contact,
-	other,
-} from "../utils/faqData";
+import { nanoid } from "nanoid";
+import { generalFaq, bridal, dayMakeUp, contact } from "../utils/faqData";
 import { commercial, general } from "./ImgTag";
 export default function FaqPage() {
 	useEffect(() => {
@@ -44,7 +38,7 @@ export default function FaqPage() {
 					<h1 className="faq">Frequently Asked Questions</h1>
 					<p>
 						Got a question? Find our FAQs here. If your question hasn't been
-						asnwered here, drop us a line or use our{" "}
+						answered here, drop us a line or use our{" "}
 						<Link to={"/contact"}>contact form.</Link>
 					</p>
 				</article>
@@ -62,13 +56,13 @@ export default function FaqPage() {
 					<AsideMenuItem itemName={"Bridal Hair & Makeup"} faqData={bridal} />
 					<AsideMenuItem itemName={"Day Hair & Makeup"} faqData={dayMakeUp} />
 					<AsideMenuItem itemName={"Contact"} faqData={contact} />
-					<AsideMenuItem itemName={"Other"} faqData={other} />
+					{/* <AsideMenuItem itemName={"Other"} faqData={other} /> */}
 				</article>
 				<article className="faq-menu-items">
 					<h3>{questionsHeading}</h3>
 					<ul>
-						{questionsData.map((question, index) => (
-							<FaqSection key={index} question={question} />
+						{questionsData.map((question) => (
+							<FaqSection key={nanoid(5)} question={question} />
 						))}
 					</ul>
 				</article>
