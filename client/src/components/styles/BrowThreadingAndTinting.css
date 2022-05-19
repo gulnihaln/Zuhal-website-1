@@ -12,25 +12,31 @@
     flex-direction: column-reverse;
 
 }
-.section1-brow-p, .section2-brow-p {
+.section1-brow-p {
     align-self: center;
-    /* margin: 30px 10px 30px; */
-    text-align: center;
-    padding: 2rem;
+    padding-right: 2rem;
     text-align: justify;
+}
+
+.section2-brow-p{
+    align-self: center;
+    text-align: center;
+    padding-left: 2rem;
+    text-align: justify;
+    
 }
 .editorial1-img,
 .editorial2-img {
     height: 600px;
     object-fit: contain;
-    max-width: 100%;
+    width: 100%;
     
 }
 
 .editorial1-img {
-    margin: 2rem 1rem 1rem 1rem;
-
+    margin-top: 2rem
 }
+
 .sectionQuote {
     display: flex;
     flex-direction: column;
@@ -54,17 +60,29 @@
 }
 
 .editorial2-img {
-    margin-bottom: 2rem;
-    margin-right: 1rem;
-    padding-right: 1rem
+   margin-bottom: 2rem;
 }
-.section1-brow-img, .section2-brow-img {
+/* .section1-brow-img, .section2-brow-img {
         width: 100%;
-    }
+    } */
 @media screen and (min-width: 480px) {
-    .section1-brow-p, .section2-brow-p {
-        /* font-size: 12px; */
+    .section1-brow-p{
+        margin: auto;
+        text-align: justify;
+        padding :1.5rem
     }
+    .section2-brow-p {
+        /* margin: auto; */
+        justify-content: center;
+        padding: 0rem 1.5rem;
+    }
+
+    .editorial2-img{
+        max-width: 88%;
+        margin-left: 6%;
+        margin: none;
+    }
+    
 }
 @media screen and (min-width: 768px) {
     .section1-brow {

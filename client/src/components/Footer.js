@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { FaTiktok } from "react-icons/fa";
 import "./styles/Footer.css";
 import ImgTag from "./ImgTag";
 
@@ -36,13 +37,13 @@ export default function Footer() {
 			<div className="footer-horizontal-line"></div>
 			<section className="social-icon-container">
 				<a href="https://m.facebook.com/zuhalmakeupartist/" target={"_blank"}>
-					<BsFacebook className="social-icon" />
+					<BsFacebook className="footer-facebook" />
 				</a>
 				<a href="https://www.instagram.com/callmezuhall/" target={"_blank"}>
-					<BsInstagram className="social-icon" />
+					<BsInstagram className="footer-instagram" />
 				</a>
 				<a href="">
-					<BsTwitter className="social-icon" />
+					<FaTiktok className="footer-tiktok" />
 				</a>
 			</section>
 			<p>&copy; Copyright Ping. All rights reserved.</p>
