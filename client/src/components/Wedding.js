@@ -29,11 +29,21 @@ export default function Wedding() {
 					stunning.
 				</p>
 				<article className="bridal-article">
-					<ImgTag category="bridal" imgLink="bridal1.jpg" alt="bridal1" />
-					<ImgTag category="bridal" imgLink="bridal2.jpg" alt="bridal2" />
+					<ImgTag
+						category="bridal"
+						imgLink="bridal1.jpg"
+						alt="bridal1"
+						className="bridal-img-1"
+					/>
+					{/* <ImgTag category="bridal" imgLink="bridal2.jpg" alt="bridal2" /> */}
 				</article>
 				<article className="bridal-article">
-					<ImgTag category="bridal" imgLink="bridal3.jpg" alt="bridal3" />
+					<ImgTag
+						category="bridal"
+						imgLink="bridal3.jpg"
+						alt="bridal3"
+						className="bridal-img-2"
+					/>
 				</article>
 				<p>
 					Zuhal’s bridal hair and makeup services will help you feel confident
