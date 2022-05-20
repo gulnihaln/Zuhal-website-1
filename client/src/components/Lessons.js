@@ -1,6 +1,6 @@
 import "./styles/Lessons.css";
 import { Link } from "react-router-dom";
-import { general, editorial } from "./ImgTag";
+import { general, editorial, commercial } from "./ImgTag";
 export default function Lessons() {
 	return (
 		<section
@@ -24,9 +24,9 @@ export default function Lessons() {
 			</article>
 			<div
 				style={{
-					backgroundImage: `url(${editorial["editorial9.jpg"].default})`,
+					backgroundImage: `url(${commercial["commercial3.jpg"].default})`,
 				}}
-				className="lessons-image"
+				className="lessons-image lessons"
 			></div>
 		</section>
 	);

@@ -2,16 +2,26 @@
 .contact-text-container {
   display: flex;
   flex-direction: column; 
+  padding: 2rem;
   /* border: 1px orange solid; */
 }
 
 .contact-header {
-  color: #000;
+  font-family: "Montserrat", sans-serif;
+  color: var(--chocolate);
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  /* color: #000; */
   /* border: 1px green solid; */
 }
 .border-box-bottom{
-    border-bottom: 1px rgba(108, 108, 108, 0.932) solid;
-    width: 95px;
+    border-bottom: 4px var(--chocolate) solid;
+    border-radius: 50px;
+    margin: auto;
+    width: 40%;
 }
 
 .contact-text-container p {
@@ -28,7 +38,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   grid-template-areas:
-    "tex tex"
+    /* "tex tex" */
     "form form"
     "map map";
 }
@@ -42,6 +52,7 @@
   /* border: 1px green solid; */
 }
 .contact-map-container {
+  box-shadow: #5f393f59 5px 5px 15px;
   grid-area: map;
   width: 100%;
   overflow: hidden;
@@ -59,9 +70,9 @@
   flex-direction: column;
 }
 .contact-form-container {
-    background-color: rgba(211, 209, 209, 0.503);
+    background-color: #fff;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: #5f393f59 5px 5px 15px;
   }
 form{
@@ -73,10 +84,13 @@ form{
   
 .form-input{
   border: none;
-  border-radius: 15px;
+  border:1px solid #eee;
+  border-radius: 5px;
+  /* border-radius: 15px; */
   padding: 7px;
 }
 .form-input:focus{
+  border: 1px solid var(--pink);
   outline: none;
 }
 .form-label-text{
@@ -95,7 +109,19 @@ form{
 .button-primary-form:hover{
   background-color: rgb(93, 88, 88);
 }
-
+select.form-input{
+  background-color: #fff;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-button-primary.button-primary{
+  width: 100%;
+  /* margin:1rem auto; */
+  /* border-radius: 5px; */
+}
 /* _________________ */
 
 /* Map Styles */
@@ -109,19 +135,91 @@ iframe{
 /* _________________ */
 
 
+.contact-hero{
+
+  position: relative;
+  /* grid-row: 1/2; */
+}
+.contact-page-hero{
+/* opacity: 0.8; */
+
+}
+.layer{
+  position: absolute;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  z-index: 1;
+
+}
+.layer p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  text-align: justify;
+}
+.layer-border-bottom{
+  border-bottom: 4px var(--pink) solid;
+  border-radius: 50px;
+  /* margin: auto; */
+  width: 40%;
+}
+.contact-layer-header{
+  font-family: "Montserrat", sans-serif;
+  color: var(--chocolate);
+  color: var(--white);
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  /* text-align: center; */
+  font-weight: 600;
+}
 /* Breaking points */
 @media screen and (min-width: 600px){
   .contact-page-main-container{
     grid-gap: 15px;
     padding: 22px 26px;
   }
+  .border-box-bottom{
+    width: 30%;
+  }
+  .contact-text-container{
+   /* align-items: flex-end; */
+  }
+  .layer p{
+    /* width: 40%; */
+  }
 }
 @media screen and (min-width: 988px){
   .contact-page-main-container{
+   grid-template-columns: 2fr 3fr;
+   grid-gap: 3rem;
     grid-template-areas: 
-     "tex form" 
+     /* "tex form"  */
     "map form" 
     "map form";
+  }
+  .contact-layer-header {
+    text-align: left;
+    font-size: 3.5rem;
+  }
+  .border-box-bottom{
+   margin: 0;
+  }
+  .layer{
+    justify-content: start;
+  }
+  .layer p{
+    font-weight: 400;
+    width: 40%;
+  }
+  .contact-map-container{
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1068px){
@@ -129,7 +227,7 @@ iframe{
     padding: 40px;
   }
   .contact-page-main-container {
-    grid-gap: 20px;
+    /* grid-gap: 20px; */
   }
   .map-frame{
     height: 100%;
@@ -143,6 +241,4 @@ iframe{
     grid-gap: 40px;
   }
 }
-
-
 

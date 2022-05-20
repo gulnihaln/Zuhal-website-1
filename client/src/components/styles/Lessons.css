@@ -1,6 +1,4 @@
 .lessons-container {
-  /* background-image: url("../../uploads/general/coming-soon-bg-pattern.svg"); */
-  /* background-image: url("../../utils/coming-soon-bg-pattern.svg"); */
   display: grid;
   align-items: center;
   justify-items: center;
@@ -11,17 +9,12 @@
     "article article";
 }
 .lessons-image {
-  /* background-image: url("https://i0.wp.com/zuhalmakeupartist.com/wp-content/uploads/2019/03/IMG_7909-Edit-4.jpg?fit=1463%2C2048&ssl=1"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
   width: 100%;
   grid-area: image;
-}
-.lessons-image.faq {
-  /* background-image: url("/0579efd00e2da10ec70e490b4621757c.jpg"); */
-  /* background-image: url("../../uploads/bridal/bridal1.jpg"); */
 }
 .lessons-article {
   display: grid;
@@ -68,8 +61,6 @@
     width: 80%;
   }
 }
-@media screen and (min-width: 768px) {
-}
 @media screen and (min-width: 992px) {
   .lessons-container {
     grid-template-areas:
@@ -91,6 +82,7 @@
   .lessons-image {
     height: 100%;
   }
-}
-@media screen and (min-width: 1200px) {
+  .lessons.lessons-image{
+    height: 95%;
+  }
 }

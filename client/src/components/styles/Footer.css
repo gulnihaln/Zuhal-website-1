@@ -30,8 +30,17 @@
   flex-direction: row;
   justify-content: center; 
 }
-footer .social-icon {
-  color: var(--lightgrey);
+.footer-facebook {
+  color: #3b5998;
+  margin: 20px 20px;
+}
+.footer-instagram{
+  color: #2f033b;
+  margin: 20px 20px;
+}
+
+.footer-tiktok{
+  color: #3c0202;
   margin: 20px 20px;
 }
 .footer p {
